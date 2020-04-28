@@ -1,7 +1,5 @@
 dev_data
 model
 result
-Train_Dcase_Bulat_feats.csv
-Train_Dcase_Bulat_feats_tran.csv
 *.csv
 *.txt
