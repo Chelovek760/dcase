@@ -3,15 +3,5 @@ model
 result
 Train_Dcase_Bulat_feats.csv
 Train_Dcase_Bulat_feats_tran.csv
-X.csv
-X_std.csv
-X_test.csv
-X_test_std.csv
-y.csv
-y_std.csv
-y_test.csv
-y_test_std.csv
-README.md
-requirements.txt
-_test.txt
-_test1.txt
+*.csv
+*.txt
