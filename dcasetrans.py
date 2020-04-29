@@ -8,7 +8,7 @@ from tqdm import tqdm
 directory = TEST_WAV_DIR
 files = pathlib.Path(directory)
 files = files.glob('*.wav')
-
+print(files)
 
 def visual_finc(wav):
     if pathlib.Path(DCASE_JSON_DIR + wav.stem + '.csv').exists():
