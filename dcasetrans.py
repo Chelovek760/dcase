@@ -11,7 +11,7 @@ files = files.glob('*.wav')
 print(files)
 
 def visual_finc(wav):
-    if pathlib.Path(DCASE_JSON_DIR + wav.stem + '.csv').exists():
+    if pathlib.Path(DCASE_CSV_DIR + wav.stem + '.csv').exists():
         return print(str(wav.stem) + 'Alredy Exist')
     path_str = TEST_WAV_DIR + wav.stem + '.wav'
     path = pathlib.Path(path_str)
@@ -22,7 +22,6 @@ def visual_finc(wav):
     Saver(path, DCASE_CSV_DIR, na1)
 
 
-with ThreadPoolExecutor(1) as executor:
-    ex=list(executor.map(visual_finc, files))
-    for _ in tqdm(ex,total=len(ex)):
+with ThreadPoolExecutor(2) as executor:
+    for _ in executor.map(visual_finc, files):
         pass

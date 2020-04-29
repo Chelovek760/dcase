@@ -1,3 +1,5 @@
+from scipy import signal
+
 import numpy as np
 import F5report as f5r
 import pathlib
@@ -116,20 +118,22 @@ class Saver():
         dir_out = pathlib.Path(self.dir_out)
         if not dir_out.exists():
             dir_out.mkdir(parents=True, exist_ok=True)
-        save_data_dict = {'coef_list': coef_list, 'time_list': time_list, 'main_tone_list': main_tone_list,
-                          'disbal_coef': disbal_coef, 'freqs_line_list': freqs_line_list, 'size': size}
-        with open(str(dir_out.joinpath(path.stem)) + '.json', "w") as write_file:
-            json.dump(save_data_dict, write_file)
+        # save_data_dict = {'coef_list': coef_list, 'time_list': time_list, 'main_tone_list': main_tone_list,
+        #                   'disbal_coef': disbal_coef, 'freqs_line_list': freqs_line_list, 'size': size}
+        # with open(str(dir_out.joinpath(path.stem)) + '.json', "w") as write_file:
+        #     json.dump(save_data_dict, write_file)
         bulat = np.array(simpleFeats(coef_list))
         coef = np.array(coef_list)
-        koef = np.mean(disbal_coef)
+        koef = np.max(disbal_coef)
         freq = np.std(freqs_line_list)
         spectal = coef.reshape(size)
-        fsd = np.mean(FeatureSpectralDecrease(spectal)[0])
-        fsf = np.mean(FeatureSpectralFlux(spectal))
-        fsr = np.mean(FeatureSpectralRolloff(spectal,1/self.na.dt)[0])
-        fss = np.mean(FeatureSpectralSlope(spectal))
-        fsflat = np.mean(FeatureSpectralFlatness(spectal))
-        fits = np.hstack((bulat, koef, freq, fsd, fsf, fsr, fss, fsflat))
+        pd.DataFrame(spectal).to_csv(r'D:\Ботать\Работа\dcase\dev_data\coefs\\' + path.stem + '.csv')
+        corr=np.sum(signal.convolve(spectal, spectal, mode='same'))
+        fsd = np.max(FeatureSpectralDecrease(spectal)[0])
+        fsf = np.max(FeatureSpectralFlux(spectal))
+        fsr = np.max(FeatureSpectralRolloff(spectal,1/self.na.dt)[0])
+        fss = np.max(FeatureSpectralSlope(spectal))
+        fsflat = np.max(FeatureSpectralFlatness(spectal))
+        fits = np.hstack((bulat, koef, freq, fsd, fsf, fsr, fss, fsflat,corr))
         pd.DataFrame(fits).to_csv(DCASE_CSV_DIR+path.stem+'.csv')
         print(path.stem, ' OK')
