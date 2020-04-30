@@ -9,7 +9,7 @@ import numpy as np
 import pathlib
 import ujson as json
 from  scipy.stats import skew,kurtosis,entropy
-from config import DCASE_CSV_DIR
+from config import DCASE_COEF_CSV_DIR,DCASE_FITS_CSV_DIR
 def FeatureSpectralDecrease(X):
     # compute index vector
     kinv = np.arange(0, X.shape[0])
@@ -62,7 +62,7 @@ def FeatureSpectralFlatness(X):
 def simpleFeats(x):
     feats = []
     feats.append(np.mean(x))
-    feats.append(np.median(x))
+    # feats.append(np.median(x))
     feats.append(np.std(x))
     feats.append(np.max(x))
     feats.append(np.min(x))
@@ -76,7 +76,7 @@ class Saver():
         self.na = Frequency_Analysis_obj
         self.path = path_in
         self.dir_out = dir_out
-        self.data_from_isotone()
+        # self.data_from_isotone()
         self.saver_json()
 
     def data_from_isotone(self):
@@ -106,13 +106,13 @@ class Saver():
         self.dist_coef = coefq
 
     def saver_json(self):
-        coef_list = self.na.c_wavlet_coef.flatten().tolist()
-        time_list = self.xcoord.tolist()
-        main_tone_list = self.ycoord_mid
-        freqs_line_list = self.na.y_axis_freq.tolist()
-
-        disbal_coef = np.nan_to_num(self.dist_coef, nan=0).tolist()
-        size = self.na.c_wavlet_coef.shape
+        coef_list = self.na.c_wavlet_coef.flatten()
+        # time_list = self.xcoord.tolist()
+        # main_tone_list = self.ycoord_mid
+        # freqs_line_list = self.na.y_axis_freq.tolist()
+        #
+        # disbal_coef = np.nan_to_num(self.dist_coef, nan=0).tolist()
+        # size = self.na.c_wavlet_coef.shape
         path = pathlib.Path(self.path)
         dir_out = pathlib.Path(self.dir_out)
         if not dir_out.exists():
@@ -121,18 +121,25 @@ class Saver():
         #                   'disbal_coef': disbal_coef, 'freqs_line_list': freqs_line_list, 'size': size}
         # with open(str(dir_out.joinpath(path.stem)) + '.json', "w") as write_file:
         #     json.dump(save_data_dict, write_file)
-        bulat = np.array(simpleFeats(coef_list))
-        coef = np.array(coef_list)
-        koef = np.max(disbal_coef)
-        freq = np.std(freqs_line_list)
-        spectal = coef.reshape(size)
-        pd.DataFrame(spectal).to_csv(r'D:\Ботать\Работа\dcase\dev_data\coefs\\' + path.stem + '.csv')
-        corr=np.sum(signal.convolve(spectal, spectal, mode='same'))
-        fsd = np.max(FeatureSpectralDecrease(spectal)[0])
-        fsf = np.max(FeatureSpectralFlux(spectal))
-        fsr = np.max(FeatureSpectralRolloff(spectal,1/self.na.dt)[0])
-        fss = np.max(FeatureSpectralSlope(spectal))
-        fsflat = np.max(FeatureSpectralFlatness(spectal))
-        fits = np.hstack((bulat, koef, freq, fsd, fsf, fsr, fss, fsflat,corr))
-        pd.DataFrame(fits).to_csv(DCASE_CSV_DIR+path.stem+'.csv')
+        # bulat = np.array(simpleFeats(coef_list))
+        # coef = np.array(coef_list)
+        # koef = np.max(disbal_coef)
+        # freq = np.std(freqs_line_list)
+        # spectal = coef.reshape(size)
+        corr=signal.convolve(self.na.c_wavlet_coef, self.na.c_wavlet_coef, mode='same')
+        sumq=np.zeros((2,corr.flatten().shape[0]))
+        sumq[0,:]=coef_list
+        sumq[1,:]=corr.flatten()
+        pd.DataFrame(sumq).to_csv(DCASE_COEF_CSV_DIR + path.stem + '.csv')
+        # fsd = np.max(FeatureSpectralDecrease(spectal)[0])
+        # fsf = np.max(FeatureSpectralFlux(spectal))
+        # fss = np.max(FeatureSpectralSlope(spectal))
+        # fsflat = np.max(FeatureSpectralFlatness(spectal))
+        # fits = np.hstack((bulat, koef, freq, fsd, fsf, fss, fsflat))
+        # fsd = np.max(FeatureSpectralDecrease(corr)[0])
+        # fsf = np.max(FeatureSpectralFlux(corr))
+        # fss = np.max(FeatureSpectralSlope(corr))
+        # fsflat = np.max(FeatureSpectralFlatness(corr))
+        # fits = np.hstack((bulat, koef, freq, fsd, fsf, fss, fsflat,fits))
+        # pd.DataFrame(fits).to_csv(dir_out.joinpath(path.stem+'.csv'))
         print(path.stem, ' OK')
