@@ -11,7 +11,7 @@ files = files.glob('*.wav')
 
 
 def visual_finc(wav):
-    if pathlib.Path(DCASE_COEF_CSV_DIR + wav.stem + '.csv').exists():
+    if pathlib.Path(DCASE_JSON_DIR + wav.stem + '.json').exists():
         return print(str(wav.stem) + 'Alredy Exist')
     path_str = TEST_WAV_DIR + wav.stem + '.wav'
     path = pathlib.Path(path_str)
@@ -19,7 +19,7 @@ def visual_finc(wav):
     wave = f5s.read_wave(str(path))
     wavlet = f5a.Wavlet(wave)
     na1 = f5a.Frequency_Analysis(wavlet, wave)
-    Saver(path, DCASE_COEF_CSV_DIR, na1)
+    Saver(path, DCASE_JSON_DIR, na1)
 
 
 with ThreadPoolExecutor(2) as executor:

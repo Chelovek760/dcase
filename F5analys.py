@@ -75,6 +75,7 @@ class Wavlet():
         fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 6))
         fig.subplots_adjust(hspace=0.3)
         ax1.plot(self.t, self.sig)
+        ax1.set_xlim(self.t[0],self.t[-1])
         ax1.set_title('Исходный')
         xred = 1
         yred = 1
