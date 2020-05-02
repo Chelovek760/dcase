@@ -24,8 +24,8 @@ for num,file in tqdm(enumerate(files),total=len(files)):
 
 #%%
 
-dataframe=pd.DataFrame(X).to_csv('X_fits_max_from_wavlet.csv')
-dataframey=pd.DataFrame(y).to_csv('y_fits_max_from_wavlet.csv')
+dataframe=pd.DataFrame(X).to_csv('feature/X_fits_max_from_wavlet.csv')
+dataframey=pd.DataFrame(y).to_csv('feature/y_fits_max_from_wavlet.csv')
 
 
 #%%
@@ -48,5 +48,5 @@ for num,file in tqdm(enumerate(files),total=len(files)):
 
 #%%
 
-dataframe=pd.DataFrame(X_test).to_csv('X_test_fits_max_from_wavlet.csv')
-dataframey=pd.DataFrame(y_test).to_csv('y_test_fits_max_from_wavlet.csv')
+dataframe=pd.DataFrame(X_test).to_csv('feature/X_test_fits_max_from_wavlet.csv')
+dataframey=pd.DataFrame(y_test).to_csv('feature/y_test_fits_max_from_wavlet.csv')

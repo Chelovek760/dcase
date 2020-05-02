@@ -1,12 +1,7 @@
-from scipy import signal
+import json
+import pathlib
 
 import numpy as np
-import F5report as f5r
-import pathlib
-import pandas as pd
-import json
-import numpy as np
-import pathlib
 import ujson as json
 from  scipy.stats import skew,kurtosis,entropy
 from config import DCASE_CSV_DIR
@@ -27,8 +22,9 @@ def FeatureSpectralDecrease(X):
     vsc = np.dot(kinv, X - X[0, :]) / norm
 
     return (vsc)
-def FeatureSpectralSlope(X):
 
+
+def FeatureSpectralSlope(X):
     # compute mean
     mu_x = X.mean(axis=0, keepdims=True)
 
@@ -40,19 +36,25 @@ def FeatureSpectralSlope(X):
     vssl = np.dot(kmu, X) / np.dot(kmu, kmu)
 
     return (vssl)
+
+
 def FeatureSpectralFlux(X):
     # difference spectrum (set first diff to zero)
     X = np.c_[X[:, 0], X]
     # X = np.concatenate(X[:,0],X, axis=1)
     afDeltaX = np.diff(X, 1, axis=1)
     # flux
-    vsf = np.sqrt((afDeltaX**2).sum(axis=0)) / X.shape[0]
+    vsf = np.sqrt((afDeltaX ** 2).sum(axis=0)) / X.shape[0]
     return (vsf)
-def FeatureSpectralRolloff(X,freq):
+
+
+def FeatureSpectralRolloff(X, freq):
     total_energy = np.cumsum(X, axis=0)
     threshold = 0.85 * total_energy[-1]
     ind = np.where(total_energy < threshold, np.nan, 1)
     return np.nanmin(ind * freq, axis=0, keepdims=True)
+
+
 def FeatureSpectralFlatness(X):
     norm = X.mean(axis=0)
     norm[norm == 0] = 1
@@ -60,10 +62,11 @@ def FeatureSpectralFlatness(X):
     vtf = np.exp(X.mean(axis=0)) / norm
     return (vtf)
 
+
 def simpleFeats(x):
     feats = []
     feats.append(np.mean(x))
-    feats.append(np.median(x))
+    # feats.append(np.median(x))
     feats.append(np.std(x))
     feats.append(np.max(x))
     feats.append(np.min(x))
@@ -71,6 +74,7 @@ def simpleFeats(x):
     feats.append(kurtosis(x))
     feats.append(entropy(x))
     return feats
+
 
 class Saver():
     def __init__(self, path_in, dir_out, Frequency_Analysis_obj):
@@ -90,14 +94,14 @@ class Saver():
             heroistic = f5r.shaft_shaking(freq)['Main']
             dict_list[t] = {}
 
-            main_coef = self.na.c_wavlet_coef[np.abs(self.na.y_axis_freq-heroistic[0]).argmin(), t]
-            for i,fsq in enumerate(heroistic[1:]):
+            main_coef = self.na.c_wavlet_coef[np.abs(self.na.y_axis_freq - heroistic[0]).argmin(), t]
+            for i, fsq in enumerate(heroistic[1:]):
 
                 if main_coef == 0:
                     dict_list[t][i] = 0
                 else:
 
-                    dict_list[t][i] = self.na.c_wavlet_coef[(np.abs(self.na.y_axis_freq-fsq)).argmin(), t]
+                    dict_list[t][i] = self.na.c_wavlet_coef[(np.abs(self.na.y_axis_freq - fsq)).argmin(), t]
         coefq = []
         for t in dict_list:
             s = 0
@@ -111,29 +115,41 @@ class Saver():
         time_list = self.xcoord.tolist()
         main_tone_list = self.ycoord_mid
         freqs_line_list = self.na.y_axis_freq.tolist()
-
         disbal_coef = np.nan_to_num(self.dist_coef, nan=0).tolist()
         size = self.na.c_wavlet_coef.shape
-        path = pathlib.Path(self.path)
-        dir_out = pathlib.Path(self.dir_out)
-        if not dir_out.exists():
-            dir_out.mkdir(parents=True, exist_ok=True)
-        # save_data_dict = {'coef_list': coef_list, 'time_list': time_list, 'main_tone_list': main_tone_list,
-        #                   'disbal_coef': disbal_coef, 'freqs_line_list': freqs_line_list, 'size': size}
-        # with open(str(dir_out.joinpath(path.stem)) + '.json', "w") as write_file:
-        #     json.dump(save_data_dict, write_file)
         bulat = np.array(simpleFeats(coef_list))
         coef = np.array(coef_list)
         koef = np.max(disbal_coef)
         freq = np.std(freqs_line_list)
         spectal = coef.reshape(size)
-        pd.DataFrame(spectal).to_csv(r'D:\Ботать\Работа\dcase\dev_data\coefs\\' + path.stem + '.csv')
-        corr=np.sum(signal.convolve(spectal, spectal, mode='same'))
         fsd = np.max(FeatureSpectralDecrease(spectal)[0])
         fsf = np.max(FeatureSpectralFlux(spectal))
-        fsr = np.max(FeatureSpectralRolloff(spectal,1/self.na.dt)[0])
         fss = np.max(FeatureSpectralSlope(spectal))
         fsflat = np.max(FeatureSpectralFlatness(spectal))
-        fits = np.hstack((bulat, koef, freq, fsd, fsf, fsr, fss, fsflat,corr))
-        pd.DataFrame(fits).to_csv(DCASE_CSV_DIR+path.stem+'.csv')
+
+        path = pathlib.Path(self.path)
+        dir_out = pathlib.Path(self.dir_out)
+        if not dir_out.exists():
+            dir_out.mkdir(parents=True, exist_ok=True)
+        save_data_dict = {'name': str(path.stem), 'coef_list': coef_list, 'time_list': time_list,
+                          'main_tone_list': main_tone_list,
+                          'disbal_coef': disbal_coef, 'freqs_line_list': freqs_line_list,
+                          'fits': {'mean': bulat[0], 'std': bulat[1], 'max': bulat[2], 'min': bulat[3],
+                                   'skew': bulat[4], 'kurtosis': bulat[5], 'entropy': bulat[6], 'maxdisbkoef': koef,
+                                   'freqstd': freq, 'fsd': fsd, 'fsf': fsf, 'fss': fss, 'fsflat': fsflat}, 'size': size}
+        with open(str(dir_out.joinpath(path.stem)) + '.json', "w") as write_file:
+            json.dump(save_data_dict, write_file)
+
+        # corr=signal.convolve(self.na.c_wavlet_coef, self.na.c_wavlet_coef, mode='same')
+        # sumq=np.zeros((2,corr.flatten().shape[0]))
+        # sumq[0,:]=coef_list
+        # sumq[1,:]=corr.flatten()
+        # pd.DataFrame(sumq).to_csv(DCASE_COEF_CSV_DIR + path.stem + '.csv')
+        # fits = np.hstack((bulat, koef, freq, fsd, fsf, fss, fsflat))
+        # fsd = np.max(FeatureSpectralDecrease(corr)[0])
+        # fsf = np.max(FeatureSpectralFlux(corr))
+        # fss = np.max(FeatureSpectralSlope(corr))
+        # fsflat = np.max(FeatureSpectralFlatness(corr))
+        # fits = np.hstack((bulat, koef, freq, fsd, fsf, fss, fsflat,fits))
+        # pd.DataFrame(fits).to_csv(dir_out.joinpath(path.stem+'.csv'))
         print(path.stem, ' OK')

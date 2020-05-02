@@ -100,8 +100,8 @@ for num,file in tqdm(enumerate(files),total=len(files)):
 
 #%%
 
-dataframe=pandas.DataFrame(X).to_csv('X_fits.csv')
-dataframey=pandas.DataFrame(y).to_csv('y_fits.csv')
+dataframe=pandas.DataFrame(X).to_csv('feature/X_fits.csv')
+dataframey=pandas.DataFrame(y).to_csv('feature/y_fits.csv')
 
 
 #%%
@@ -136,5 +136,5 @@ for num,file in tqdm(enumerate(files),total=len(files)):
 
 #%%
 
-dataframe=pandas.DataFrame(X_test).to_csv('X_test_fits.csv')
-dataframey=pandas.DataFrame(y_test).to_csv('y_test_fits.csv')
+dataframe=pandas.DataFrame(X_test).to_csv('feature/X_test_fits.csv')
+dataframey=pandas.DataFrame(y_test).to_csv('feature/y_test_fits.csv')

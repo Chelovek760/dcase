@@ -104,7 +104,7 @@ for ix, wav in tqdm(enumerate(files),total=sizex):
     if ix==0:
         matrix=np.zeros((sizex,fists.shape[1]))
     matrix[ix,:]=fists
-df=pd.DataFrame(matrix).to_csv('Train_Dcase_Bulat_feats_tran.csv')
+df=pd.DataFrame(matrix).to_csv('feature/Train_Dcase_Bulat_feats_tran.csv')
 # with ThreadPoolExecutor(4) as executor:
 #     for _ in tqdm(executor.map(visual_finc, files)):
 #         pass
