@@ -21,3 +21,8 @@ TEST_WAV_DIR = r'F:\Data Sets\MIMI\fan\train\\'
 TEST_PIC_DIR = r'D:\Ботать\Работа\dg.a.core\data\graph\dcase\27.04'+'\\'
 DCASE_JSON_DIR= 'D:\\Ботать\\Работа\\dg.a.core\\data\\json\\dcase\\fan\\train\\'
 DCASE_CSV_DIR= r'D:\Ботать\Работа\dcase\dev_data\csv_3\train'+'\\'
+
+
+BAD_CASE_WAV = r'segment_data\bad\\'
+
+GOOD_CASE_WAV = r'segment_data\good\\'
