@@ -11,15 +11,14 @@ from sklearn.decomposition import PCA
 from collections import Counter
 import pathlib
 
-from config import BAD_CASE_WAV, GOOD_CASE_WAV
+from config import BAD_CASE_WAV, GOOD_CASE_WAV,TEST_WAV_DIR
 from sklearn.cluster import KMeans
 import pandas as pd
 import seaborn as sns
-#directory = TEST_WAV_DIR
-# files = pathlib.Path(directory)
-# files = files.glob('*.wav')
-# files=list(files)[0:1]
-files=[r'normal_id_00_00000000.wav']
+directory = TEST_WAV_DIR
+files = pathlib.Path(directory)
+files = files.glob('*.wav')
+files=list(files)
 segment_number=99
 for num,file in tqdm(enumerate(files),total=len(files)):
     wave = f5s.read_wave(str(file))
@@ -34,7 +33,7 @@ for num,file in tqdm(enumerate(files),total=len(files)):
         X[id,:]=wavelet_part.flatten()
     pca = PCA(n_components=2)
     Xnew = pca.fit_transform(X)
-    model = IsolationForest()
+    model = IsolationForest(n_estimators=500)
     res=model.fit_predict(Xnew)
     countminus=np.sum(res==-1)
     if countminus>segment_number//2:
@@ -82,7 +81,7 @@ for num,file in tqdm(enumerate(files),total=len(files)):
     repared=allfile.copy()
     repared['y']=res
 
-    dir_bad_out = pathlib.Path(BAD_CASE_WAV + str(file)[:-4] + '\\')
+    dir_bad_out = pathlib.Path(BAD_CASE_WAV)
 
     if not dir_bad_out.exists():
         dir_bad_out.mkdir(parents=True, exist_ok=True)
@@ -92,32 +91,32 @@ for num,file in tqdm(enumerate(files),total=len(files)):
     for i in np.argwhere(res==-1):
         x1,x2=wavlet.x_axis_time[i*newtimeshape//segment_number],wavlet.x_axis_time[(i+1)*newtimeshape//segment_number]
         time1 = float(wavlet.x_axis_time[i*newtimeshape//segment_number])
-        #time2 = float(wavlet.x_axis_time[(i+1)*newtimeshape//segment_number])
+        time2 = float(wavlet.x_axis_time[(i+1)*newtimeshape//segment_number])
         print(time1)
         #print(time2)
 
-        wave_tmp = f5s.Wave(wave.segment(time1, 0.1).ys, framerate=16000)
-        wave_tmp.write(str(dir_bad_out) + '\\' + str(i) + '.wav')
+        wave_tmp = f5s.Wave(wave.segment(time1, time2-time1).ys, framerate=wave.framerate)
+        wave_tmp.write(BAD_CASE_WAV+str(file.stem)+ '_bad_'+str(i) + '.wav')
 
         ax2.axvspan(x1,x2,alpha=0.3, color='black')
 
-    dir_good_out = pathlib.Path(GOOD_CASE_WAV + str(file) + '\\')
+    dir_good_out = pathlib.Path(GOOD_CASE_WAV)
 
     if not dir_good_out.exists():
         dir_good_out.mkdir(parents=True, exist_ok=True)
 
     print('Good_time:')
-    wave_good = f5s.Wave([0], framerate=16000)
+    wave_good = f5s.Wave([0], framerate=wave.framerate)
     for i in np.argwhere(res==1):
 
         x1,x2=wavlet.x_axis_time[i*newtimeshape//segment_number],wavlet.x_axis_time[(i+1)*newtimeshape//segment_number]
         time1 = float(wavlet.x_axis_time[i*newtimeshape//segment_number])
-        #time2 = float(wavlet.x_axis_time[(i+1)*newtimeshape//segment_number])
+        time2 = float(wavlet.x_axis_time[(i+1)*newtimeshape//segment_number])
         print(time1)
         #print(time2)
 
-        wave_tmp = f5s.Wave(wave.segment(time1, 0.1).ys, framerate=16000)
-        wave_tmp.write(str(dir_good_out) + '\\' + str(i) + '.wav')
+        wave_tmp = f5s.Wave(wave.segment(time1, time2-time1).ys, framerate=wave.framerate)
+        wave_tmp.write(GOOD_CASE_WAV +str(file.stem)+'_good_'+str(i) + '.wav')
         #ax2.axvspan(x1,x2,alpha=0.3, color='black')
 
 
