@@ -19,7 +19,7 @@ class Wavlet():
     """
 
     def __init__(self, wave):
-        print('CALCULATE T-F MAP')
+        # print('CALCULATE T-F MAP')
         self.sig = wave.ys
         self.duration = wave.duration
         self.N = np.shape(self.sig)[0]
@@ -83,7 +83,7 @@ class Wavlet():
         yplot = razryad(self.y_axis_freq, yred)
         tfplot = razryad_2d(self.c_wavlet_coef, yred, xred)
         ts, freq = np.meshgrid(xplot, yplot)
-        print('PLOT, DOWNSCALE ', xred, yred)
+        # print('PLOT, DOWNSCALE ', xred, yred)
         ax2.set_title(self.title)
         clim = 50.
         clim = np.max(tfplot)
