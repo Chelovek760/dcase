@@ -86,10 +86,6 @@ class  Buono_Brutto_Cattivo:
         repared=allfile.copy()
         repared['y']=res
 
-        dir_bad_out = pathlib.Path(BAD_CASE_WAV)
-
-        if not dir_bad_out.exists():
-            dir_bad_out.mkdir(parents=True, exist_ok=True)
 
         # print('Bad_time:')
 
@@ -187,7 +183,10 @@ class  Buono_Brutto_Cattivo:
             good_features_dict={}
             bad_features_dict={}
             good_dict,bad_dict=self.separate()
-            for ind in good_dict:
+
+            good_siment=list(filter(lambda x: isinstance(x,np.int64),good_dict.keys()))
+            bad_siment=list(filter(lambda x: isinstance(x,np.int64),bad_dict.keys()))
+            for ind in good_siment:
                 coef_list = good_dict[ind]
                 bulat = np.array(self.simpleFeats(coef_list.flatten()))
                 fsd = np.max(self.FeatureSpectralDecrease(coef_list)[0])
@@ -196,7 +195,7 @@ class  Buono_Brutto_Cattivo:
                 fsflat = np.max(self.FeatureSpectralFlatness(coef_list))
                 features_dict = {'mean': bulat[0], 'std': bulat[1], 'max': bulat[2], 'min': bulat[3],'skew': bulat[4], 'kurtosis': bulat[5], 'entropy': bulat[6], 'fsd': fsd, 'fsf': fsf, 'fss': fss, 'fsflat': fsflat}
                 good_features_dict[ind]=  features_dict
-            for ind in bad_dict:
+            for ind in bad_siment:
                 coef_list = bad_dict[ind]
                 bulat = np.array(self.simpleFeats(coef_list.flatten()))
                 fsd = np.max(self.FeatureSpectralDecrease(coef_list)[0])
@@ -207,7 +206,7 @@ class  Buono_Brutto_Cattivo:
                                  'kurtosis': bulat[5], 'entropy': bulat[6], 'fsd': fsd, 'fsf': fsf, 'fss': fss,
                                  'fsflat': fsflat}
                 bad_features_dict[ind] = features_dict
-                return good_dict,good_features_dict,bad_dict,bad_features_dict
+            return good_dict,good_features_dict,bad_dict,bad_features_dict
         else:
             coef_list = wavlet_matrix
             bulat = np.array(self.simpleFeats(coef_list.flatten()))
@@ -223,4 +222,4 @@ class  Buono_Brutto_Cattivo:
 
 if __name__=='__main__':
     bbc=Buono_Brutto_Cattivo(r'D:\Ботать\Работа\dcase\dev_data\dcase\fan\test\anomaly_id_00_00000000.wav')
-    print(bbc.separate())
+    print(bbc.features_generator())
