@@ -675,12 +675,13 @@ class Wave:
 
         return res
 
-    def write(self, filename="sound.wav"):
+    def write(self, filename="sound.wav", report_flag=True):
         """Write a wave file.
 
         filename: string
         """
-        print("Writing", filename)
+        if report_flag:
+            print("Writing", filename)
         wfile = WavFileWriter(filename, self.framerate)
         wfile.write(self)
         wfile.close()

@@ -83,13 +83,7 @@ def list_to_vector_array(file_list,
                          n_mels=64,
                          frames=5,
                          n_fft=1024,
-
-
-
-
-
-
-                        hop_length=512,
+                         hop_length=512,
                          power=2.0):
     """
     convert the file_list to a vector array.
@@ -106,7 +100,7 @@ def list_to_vector_array(file_list,
         * dataset.shape = (number of feature vectors, dimensions of feature vectors)
     """
     # calculate the number of dimensions
-    dims = 900 #n_mels * frames
+    dims = n_mels * frames
 
     # iterate file_to_vector_array()
     for idx in tqdm(range(len(file_list)), desc=msg):
@@ -125,8 +119,7 @@ def list_to_vector_array(file_list,
 
 def file_list_generator(target_dir,
                         dir_name="train",
-                        ext="json"):
-                        #ext="wav"):
+                        ext="wav"):
     """
     target_dir : str
         base directory path of the dev_data or eval_data
@@ -171,7 +164,7 @@ if __name__ == "__main__":
 
     # load base_directory list
     dirs = com.select_dirs(param=param, mode=mode)
-    print(dirs)
+
     # loop of the base directory
     for idx, target_dir in enumerate(dirs):
         print("\n===========================")
@@ -199,10 +192,9 @@ if __name__ == "__main__":
                                           hop_length=param["feature"]["hop_length"],
                                           power=param["feature"]["power"])
 
-        print(train_data.shape)
         # train model
         print("============== MODEL TRAINING ==============")
-        model = keras_model.get_model(900)#param["feature"]["n_mels"] * param["feature"]["frames"])
+        model = keras_model.get_model(param["feature"]["n_mels"] * param["feature"]["frames"])
         model.summary()
 
         model.compile(**param["fit"]["compile"])

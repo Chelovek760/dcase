@@ -49,7 +49,7 @@ def save_csv(save_file_path,
 
 def get_machine_id_list_for_test(target_dir,
                                  dir_name="test",
-                                 ext="json"):
+                                 ext="wav"):
     """
     target_dir : str
         base directory path of "dev_data" or "eval_data"
@@ -76,7 +76,7 @@ def test_file_list_generator(target_dir,
                              dir_name="test",
                              prefix_normal="normal",
                              prefix_anomaly="anomaly",
-                             ext="json"):
+                             ext="wav"):
     """
     target_dir : str
         base directory path of the dev_data or eval_data

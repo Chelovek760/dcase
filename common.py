@@ -20,8 +20,7 @@ import librosa
 import librosa.core
 import librosa.feature
 import yaml
-import json
-import numpy as np
+
 ########################################################################
 
 
@@ -134,45 +133,32 @@ def file_to_vector_array(file_name,
         * dataset.shape = (dataset_size, feature_vector_length)
     """
     # 01 calculate the number of dimensions
-    # dims = n_mels * frames
+    dims = n_mels * frames
 
-    # # 02 generate melspectrogram using librosa
-    # y, sr = file_load(file_name)
-    # mel_spectrogram = librosa.feature.melspectrogram(y=y,
-    #                                                  sr=sr,
-    #                                                  n_fft=n_fft,
-    #                                                  hop_length=hop_length,
-    #                                                  n_mels=n_mels,
-    #                                                  power=power)
+    # 02 generate melspectrogram using librosa
+    y, sr = file_load(file_name)
+    mel_spectrogram = librosa.feature.melspectrogram(y=y,
+                                                     sr=sr,
+                                                     n_fft=n_fft,
+                                                     hop_length=hop_length,
+                                                     n_mels=n_mels,
+                                                     power=power)
 
-    # # 03 convert melspectrogram to log mel energy
-    # log_mel_spectrogram = 20.0 / power * numpy.log10(mel_spectrogram + sys.float_info.epsilon)
+    # 03 convert melspectrogram to log mel energy
+    log_mel_spectrogram = 20.0 / power * numpy.log10(mel_spectrogram + sys.float_info.epsilon)
+    print(log_mel_spectrogram.shape)
+    # 04 calculate total vector size
+    
+    vector_array_size = len(log_mel_spectrogram[0, :]) - frames + 1
+    print(vector_array_size)
+    # 05 skip too short clips
+    if vector_array_size < 1:
+        return numpy.empty((0, dims))
 
-    # # 04 calculate total vector size
-    # vector_array_size = len(log_mel_spectrogram[0, :]) - frames + 1
-    # print(vector_array_size)
-
-    # # 05 skip t
-    #
-    #
-    # oo short clips
-    # if vector_array_size < 1:
-    #     return numpy.empty((0, dims))
-
-    # # 06 generate feature vectors by concatenating multiframes
-    # vector_array = numpy.zeros((vector_array_size, dims))
-    # for t in range(frames):
-    #     tmp = log_mel_spectrogram[:, t: t + vector_array_size].T
-    #     vector_array[:, n_mels * t: n_mels * (t + 1)] = log_mel_spectrogram[:, t: t + vector_array_size].T
-    with open(file_name) as json_file:
-        data = json.load(json_file)
-
-    #print(data.keys())
-    #print(data['size'] )
-
-    vector_array = np.reshape(data['coef_list'][::20], (500, 900))#data['size'])
-
-    print(vector_array.shape)
+    # 06 generate feature vectors by concatenating multiframes
+    vector_array = numpy.zeros((vector_array_size, dims))
+    for t in range(frames):
+        vector_array[:, n_mels * t: n_mels * (t + 1)] = log_mel_spectrogram[:, t: t + vector_array_size].T
 
     return vector_array
 
@@ -203,5 +189,6 @@ def select_dirs(param, mode):
 
 ########################################################################
 
-# if __name__ == "__main__":
-#     file_to_vector_array(r'F:\Data Sets\JSON\fun\test\anomaly_id_00_00000000.json')
+if __name__ == "__main__":
+
+    file_to_vector_array('normal_id_00_00000000.wav')
