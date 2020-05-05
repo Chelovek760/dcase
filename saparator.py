@@ -80,13 +80,10 @@ class  Buono_Brutto_Cattivo:
         #print(lim)
         good_another=cor_bad_good>lim*0.95
         for index, row in good_another.iterrows():
-            countminus = np.sum(res == -1)
             if row[col_list].mean()>lim:
                 res[index]=1
         repared=allfile.copy()
         repared['y']=res
-
-
         # print('Bad_time:')
 
         for i in np.argwhere(res==-1):
@@ -194,7 +191,7 @@ class  Buono_Brutto_Cattivo:
                 fss = np.max(self.FeatureSpectralSlope(coef_list))
                 fsflat = np.max(self.FeatureSpectralFlatness(coef_list))
                 features_dict = {'mean': bulat[0], 'std': bulat[1], 'max': bulat[2], 'min': bulat[3],'skew': bulat[4], 'kurtosis': bulat[5], 'entropy': bulat[6], 'fsd': fsd, 'fsf': fsf, 'fss': fss, 'fsflat': fsflat}
-                good_features_dict[ind]=  features_dict
+                good_features_dict[ind]= features_dict
             for ind in bad_siment:
                 coef_list = bad_dict[ind]
                 bulat = np.array(self.simpleFeats(coef_list.flatten()))
@@ -221,5 +218,7 @@ class  Buono_Brutto_Cattivo:
         pass
 
 if __name__=='__main__':
-    bbc=Buono_Brutto_Cattivo(r'D:\Ботать\Работа\dcase\dev_data\dcase\fan\test\anomaly_id_00_00000000.wav')
-    print(bbc.features_generator())
+    bbc=Buono_Brutto_Cattivo(r'D:\Ботать\Работа\dcase\dev_data\dcase\fan\test\anomaly_id_00_0000000.wav')
+    _,gf,b,bf=bbc.features_generator()
+    print(gf)
+    print(b,bf)
