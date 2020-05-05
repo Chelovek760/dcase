@@ -23,6 +23,7 @@ from tqdm import tqdm
 # original lib
 import common as com
 import keras_model
+
 ########################################################################
 
 
@@ -152,7 +153,7 @@ if __name__ == "__main__":
     # check mode
     # "development": mode == True
     # "evaluation": mode == False
-    mode = com.command_line_chk()
+    mode = True#com.command_line_chk()
     if mode is None:
         sys.exit(-1)
         

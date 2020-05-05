@@ -222,5 +222,5 @@ class  Buono_Brutto_Cattivo:
         pass
 
 if __name__=='__main__':
-    bbc=Buono_Brutto_Cattivo(r'D:\Ботать\Работа\dcase\dev_data\dcase\fan\test\anomaly_id_00_00000000.wav')
-    print(bbc.features_generator())
+    bbc=Buono_Brutto_Cattivo(r'normal_id_00_00000000.wav')
+    print(len(bbc.features_generator()[0]))
