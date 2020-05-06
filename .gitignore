@@ -10,6 +10,7 @@ __pycache__/F5plot.cpython-37.pyc
 __pycache__/Fquality.cpython-37.pyc
 __pycache__/F5signal.cpython-37.pyc
 __pycache__/Dcase_saver.cpython-37.pyc
-/config.py
 pic
 feature
+/config.py
+/.vscode/
