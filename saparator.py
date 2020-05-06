@@ -32,7 +32,7 @@ class  Buono_Brutto_Cattivo:
         dur=wavlet.x_axis_time[-1]/segment_number
         bad_dict = {'freq': wavlet.y_axis_freq,'dur_part':dur}
         good_dict = {'freq': wavlet.y_axis_freq,'dur_part':dur}
-        # fig, ax1, ax2 = wavlet.wavlet_plot()
+        #fig, ax1, ax2 = wavlet.wavlet_plot()
         newtimeshape=wavlet.c_wavlet_coef.shape[1]//segment_number*segment_number
         #print(wavlet.c_wavlet_coef.shape[1],newtimeshape)
         wavlet_list=np.hsplit(wavlet.c_wavlet_coef[:,:newtimeshape], segment_number)
@@ -103,13 +103,13 @@ class  Buono_Brutto_Cattivo:
             # print(time1)
             #print(time2)
             good_dict[i[0]] = wavlet_list[i[0]]
-            #ax2.axvspan(x1,x2,alpha=0.3, color='black')
+            # ax2.axvspan(x1,x2,alpha=0.3, color='black')
         # plt.figure()
         # sns.heatmap(np.abs(allfile.loc[allfile['y'] == 1].T.corr()))
         # plt.figure()
         # sns.heatmap(allfile.T.corr())
-        #
-        #plt.show()
+        
+        # plt.show()
         return good_dict,bad_dict
 
     def FeatureSpectralDecrease(self,X):
@@ -219,5 +219,5 @@ class  Buono_Brutto_Cattivo:
         pass
 
 if __name__=='__main__':
-    bbc=Buono_Brutto_Cattivo(r'normal_id_00_00000000.wav')
-    print(len(bbc.features_generator()[0]))
+    bbc=Buono_Brutto_Cattivo(r'dev_data\fan\train\normal_id_06_00000003.wav')
+    bbc.separate()
