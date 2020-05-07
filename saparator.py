@@ -110,7 +110,7 @@ class  Buono_Brutto_Cattivo:
         # sns.heatmap(allfile.T.corr())
         
         # plt.show()
-        return good_dict,bad_dict
+        return good_dict, bad_dict
 
     def FeatureSpectralDecrease(self,X):
         # compute index vector
@@ -215,9 +215,10 @@ class  Buono_Brutto_Cattivo:
             features_dict = {'mean': bulat[0], 'std': bulat[1], 'max': bulat[2], 'min': bulat[3], 'skew': bulat[4],
                              'kurtosis': bulat[5], 'entropy': bulat[6], 'fsd': fsd, 'fsf': fsf, 'fss': fss,
                              'fsflat': fsflat}
-            return wavlet_matrix,features_dict
+            return wavlet_matrix, features_dict
         pass
 
 if __name__=='__main__':
+
     bbc=Buono_Brutto_Cattivo(r'dev_data\fan\train\normal_id_06_00000003.wav')
     bbc.separate()

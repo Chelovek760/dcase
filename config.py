@@ -1,5 +1,5 @@
 import os
-TEST_WAV_DIR = r'D:\Ботать\Работа\dcase\dev_data\dcase\fan\test\\'
+TEST_WAV_DIR = r'C:\Users\markh\Work\my_dcase\testing\dev_data\fan\train'
 TRAIN_WAV_DIR = r'D:\Ботать\Работа\dcase\dev_data\dcase\fan\train\\'
 TEST_PIC_DIR = r'D:\Ботать\Работа\dg.a.core\data\graph\dcase\27.04'+'\\'
 DCASE_JSON_DIR= 'D:\\Ботать\\Работа\\dg.a.core\\data\\json\\dcase\\fan\\train\\'

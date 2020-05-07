@@ -21,6 +21,11 @@ import librosa.core
 import librosa.feature
 import yaml
 
+from saparator import Buono_Brutto_Cattivo
+import matplotlib.pyplot as plt
+from config import TEST_WAV_DIR
+import pathlib
+
 ########################################################################
 from saparator import Buono_Brutto_Cattivo
 
@@ -134,45 +139,22 @@ def file_to_vector_array(file_name,
         * dataset.shape = (dataset_size, feature_vector_length)
     """
     # 01 calculate the number of dimensions
-    sep = Buono_Brutto_Cattivo(file_name, 99)
-    spectro_good = sep.separate()[0]
 
-    print(spectro_good.shape)
-    dims_all_array = len(spectro_good)
-    nmels = int(round(20 * 16000/1000))
-    dims = nmels * frames
+    bbc = Buono_Brutto_Cattivo(file_name, 99)
+    bcc_keys = bbc.separate()[1]
+    bcc_keys.pop('freq', None)
+    bcc_keys.pop('dur_part', None)
 
-    # # 02 generate melspectrogram using librosa
-    # y, sr = file_load(file_name)
-    # mel_spectrogram = librosa.feature.melspectrogram(y=y,
-    #                                                  sr=sr,
-    #                                                  n_fft=n_fft,
-    #                                                  hop_length=hop_length,
-    #                                                  n_mels=n_mels,
-    #                                                  power=power)
+    l = list(bcc_keys.keys())
+    if len(l) > 0:
+        defect_array = numpy.array([bcc_keys[l[0]].ravel()])
+        for part in l[1:]:
+            defect_array = numpy.vstack((defect_array, bcc_keys[part].ravel()))
+        print(defect_array.shape)
 
-    # # 03 convert melspectrogram to log mel energy
-    # log_mel_spectrogram = 20.0 / power * numpy.log10(mel_spectrogram + sys.float_info.epsilon)
-    # print(log_mel_spectrogram.shape)
-    # 04 calculate total vector size
-    
-    vector_array_size = len(spectro_good[0][0, :]) - frames + 1
-    print(vector_array_size)
-    # 05 skip too short clips
-    if vector_array_size < 1:
-        return numpy.empty((0, dims))
-
-    
-    # 06 generate feature vectors by concatenating multiframes
-    vector_list_with_array = numpy.zeros((dims_all_array, vector_array_size))
-
-    for index, cadr in enumerate(spectro_good[1:]):
-        vector_array = numpy.zeros((vector_array_size, dims))
-        for t in range(frames):
-            vector_array[:, n_mels * t: n_mels * (t + 1)] = cadr[:, t: t + vector_array_size].T
-        vector_list_with_array[index] = vector_array
-
-    return vector_list_with_array
+        return defect_array
+        
+    return None
 
 
 # load dataset
@@ -203,8 +185,15 @@ def select_dirs(param, mode):
 
 if __name__ == "__main__":
 
-    file_name = r'normal_id_00_00000000.wav'
-    #print(file_to_vector_array(file_name))
-    sep = Buono_Brutto_Cattivo(file_name, 99)
-    spectro_good = sep.separate()[0]
-    print(spectro_good.keys())
+    file_name = r'dev_data\fan\train\normal_id_00_00000001.wav'
+
+    # n_mels = 128
+    # frames = 5
+    # n_fft = 1024
+    # hop_length = 512
+    # power = 2
+
+
+    # dims = n_mels * frames
+
+    file_to_vector_array(file_name)
