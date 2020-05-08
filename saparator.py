@@ -21,7 +21,7 @@ files = pathlib.Path(directory)
 files = files.glob('*.wav')
 files=list(files)
 class  Buono_Brutto_Cattivo:
-    def __init__(self,file_name,segment_number=99):
+    def __init__(self,file_name=None,segment_number=99):
         self.segment_number=segment_number
         self.filename=file_name
     def separate(self):
@@ -176,8 +176,8 @@ class  Buono_Brutto_Cattivo:
         feats.append(entropy(x))
         return feats
 
-    def features_generator(self,wavlet_matrix=None):
-        if not wavlet_matrix:
+    def features_generator(self,wav=None):
+        if not wav:
             good_features_dict={}
             bad_features_dict={}
             good_dict,bad_dict=self.separate()
@@ -206,19 +206,31 @@ class  Buono_Brutto_Cattivo:
                 bad_features_dict[ind] = features_dict
             return good_dict,good_features_dict,bad_dict,bad_features_dict
         else:
-            coef_list = wavlet_matrix
-            bulat = np.array(self.simpleFeats(coef_list.flatten()))
-            fsd = np.max(self.FeatureSpectralDecrease(coef_list)[0])
-            fsf = np.max(self.FeatureSpectralFlux(coef_list))
-            fss = np.max(self.FeatureSpectralSlope(coef_list))
-            fsflat = np.max(self.FeatureSpectralFlatness(coef_list))
-            features_dict = {'mean': bulat[0], 'std': bulat[1], 'max': bulat[2], 'min': bulat[3], 'skew': bulat[4],
-                             'kurtosis': bulat[5], 'entropy': bulat[6], 'fsd': fsd, 'fsf': fsf, 'fss': fss,
-                             'fsflat': fsflat}
-            return wavlet_matrix, features_dict
+            wave = f5s.read_wave(str(wav))
+            wavlet = f5a.Wavlet(wave)
+            sig=wave.ys
+            features_dict={}
+            newtimeshape =wavlet.c_wavlet_coef.shape[1] // self.segment_number * self.segment_number
+            newtimeshapesig = sig.shape[0] // self.segment_number * self.segment_number
+            wavlet_list = np.hsplit(wavlet.c_wavlet_coef[:, :newtimeshape], self.segment_number)
+            siglist=np.hsplit(sig[:newtimeshapesig],self.segment_number)
+            for ind,matrix in enumerate(wavlet_list):
+                coef_list = matrix
+                bulat = np.array(self.simpleFeats(coef_list.flatten()))
+                bulat_for_sig= np.array(self.simpleFeats(siglist[ind]))
+                fsd = np.max(self.FeatureSpectralDecrease(coef_list)[0])
+                fsf = np.max(self.FeatureSpectralFlux(coef_list))
+                fss = np.max(self.FeatureSpectralSlope(coef_list))
+                fsflat = np.max(self.FeatureSpectralFlatness(coef_list))
+                features_dict[ind] = {'mean_sig': bulat_for_sig[0], 'std_sig': bulat_for_sig[1], 'max_sig': bulat_for_sig[2], 'min_sig': bulat_for_sig[3], 'skew_sig': bulat_for_sig[4],
+                                 'kurtosis_sig': bulat_for_sig[5], 'mean': bulat[0], 'std': bulat[1], 'max': bulat[2], 'min': bulat[3], 'skew': bulat[4],
+                                 'kurtosis': bulat[5], 'entropy': bulat[6], 'fsd': fsd, 'fsf': fsf, 'fss': fss,
+                                 'fsflat': fsflat}
+            return wavlet_list, features_dict
         pass
 
 if __name__=='__main__':
 
     bbc=Buono_Brutto_Cattivo(r'dev_data\fan\train\normal_id_06_00000003.wav')
-    bbc.separate()
+    _,f=bbc.features_generator(r'dev_data\fan\train\normal_id_06_00000003.wav')
+    print(f)
