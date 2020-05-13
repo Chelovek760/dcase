@@ -117,7 +117,7 @@ def list_to_vector_array(file_list,
             dataset = vector_array
             continue
         dataset = numpy.vstack((dataset, vector_array))
-        print(dataset.shape)
+        #print(dataset.shape)
     return dataset
 
 
@@ -198,7 +198,7 @@ if __name__ == "__main__":
 
         # train model
         print("============== MODEL TRAINING ==============")
-        model = keras_model.get_model(param["feature"]["n_mels"] * param["feature"]["frames"])
+        model = keras_model.get_model(1610)
         model.summary()
 
         model.compile(**param["fit"]["compile"])

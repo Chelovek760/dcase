@@ -7,3 +7,55 @@ INFO: :train_file num : 3675
 INFO: :load_directory <- development
 INFO: :target_dir : C:\Users\markh\Work\my_dcase\testing\dev_data\fan
 INFO: :train_file num : 3675
+INFO: :load_directory <- development
+INFO: :target_dir : c:\Users\markh\Work\my_dcase\testing\dev_data\fan
+INFO: :train_file num : 3675
+INFO: :load_directory <- development
+INFO: :target_dir : C:\Users\markh\Work\my_dcase\testing\dev_data\fan
+INFO: :train_file num : 3675
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:68: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:508: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:3837: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:127: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\optimizers.py:757: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+INFO: :load_directory <- development
+INFO: :target_dir : C:\Users\markh\Work\my_dcase\testing\dev_data\fan
+INFO: :train_file num : 3675
+INFO: :load_directory <- development
+INFO: :target_dir : C:\Users\markh\Work\my_dcase\testing\dev_data\fan
+INFO: :train_file num : 3675
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:68: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:508: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:3837: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:127: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\optimizers.py:757: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:977: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:964: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:2503: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:168: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:175: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:184: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:193: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:200: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+DEBUG:matplotlib.axes._base:update_title_pos
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Users\\markh\\Work\\my_dcase\\testing\\env\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('C:\\Users\\markh\\Work\\my_dcase\\testing\\env\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+INFO: :save_model -> ./model/model_fan.hdf5

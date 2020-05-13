@@ -150,7 +150,7 @@ def file_to_vector_array(file_name,
         defect_array = numpy.array([bcc_keys[l[0]].ravel()])
         for part in l[1:]:
             defect_array = numpy.vstack((defect_array, bcc_keys[part].ravel()))
-        print(defect_array.shape)
+        #print(defect_array.shape)
 
         return defect_array
         

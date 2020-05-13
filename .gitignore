@@ -10,3 +10,8 @@ feature
 .vscode
 .ipynb_checkpoints/Untitled-checkpoint.ipynb
 config.py
+/thrash
+.ipynb_checkpoints/VGGish_Audio_Embedding-checkpoint.ipynb
+models
+vggish_pca_params.npz
+vggish_model.ckpt

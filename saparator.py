@@ -21,7 +21,7 @@ files = pathlib.Path(directory)
 files = files.glob('*.wav')
 files=list(files)
 class  Buono_Brutto_Cattivo:
-    def __init__(self,file_name,segment_number=99):
+    def __init__(self,file_name=None,segment_number=99):
         self.segment_number=segment_number
         self.filename=file_name
     def separate(self):
@@ -32,7 +32,7 @@ class  Buono_Brutto_Cattivo:
         dur=wavlet.x_axis_time[-1]/segment_number
         bad_dict = {'freq': wavlet.y_axis_freq,'dur_part':dur}
         good_dict = {'freq': wavlet.y_axis_freq,'dur_part':dur}
-        #fig, ax1, ax2 = wavlet.wavlet_plot()
+        fig, ax1, ax2 = wavlet.wavlet_plot()
         newtimeshape=wavlet.c_wavlet_coef.shape[1]//segment_number*segment_number
         #print(wavlet.c_wavlet_coef.shape[1],newtimeshape)
         wavlet_list=np.hsplit(wavlet.c_wavlet_coef[:,:newtimeshape], segment_number)
@@ -49,11 +49,11 @@ class  Buono_Brutto_Cattivo:
             res=res*-1
         for i in np.argwhere(res==-1):
             x1,x2=wavlet.x_axis_time[i*newtimeshape//segment_number],wavlet.x_axis_time[(i+1)*newtimeshape//segment_number]
-            # ax2.axvspan(x1,x2,alpha=0.3, color='red')
-            # ax2.text((x1+x2)/2,wavlet.y_axis_freq[wavlet.y_axis_freq.shape[0]//2],str(i),color='blue')
+            ax2.axvspan(x1,x2,alpha=0.3, color='red')
+            #ax2.text((x1+x2)/2,wavlet.y_axis_freq[wavlet.y_axis_freq.shape[0]//2],str(i),color='blue')
         for i in np.argwhere(res==1):
             x1,x2=wavlet.x_axis_time[i*newtimeshape//segment_number],wavlet.x_axis_time[(i+1)*newtimeshape//segment_number]
-            # ax2.text((x1+x2)/2,wavlet.y_axis_freq[wavlet.y_axis_freq.shape[0]//2],str(i),color='red')
+            ax2.text((x1+x2)/2,wavlet.y_axis_freq[wavlet.y_axis_freq.shape[0]//2],str(i),color='red')
         allfile=pd.DataFrame(X)
         allfile['y']=res
         good_frames=allfile.loc[allfile['y'] == 1].T
@@ -68,7 +68,7 @@ class  Buono_Brutto_Cattivo:
         #print(col_list,col_list_bad)
         #print(cor_bad_good)
         # plt.figure()
-        # sns.heatmap(cor_bad_good)
+        #sns.heatmap(cor_bad_good)
         for ind,col in enumerate(col_list):
             if ind==0:
                 c.append(np.abs(good_frames[col].corr(good_frames[col_list[ind+1]])))
@@ -94,7 +94,7 @@ class  Buono_Brutto_Cattivo:
             # print(time1)
             #print(time2)
             bad_dict[i[0]]=wavlet_list[i[0]]
-            # ax2.axvspan(x1,x2,alpha=0.3, color='black')
+            ax2.axvspan(x1,x2,alpha=0.3, color='black')
 
         for i in np.argwhere(res==1):
             x1,x2=wavlet.x_axis_time[i*newtimeshape//segment_number],wavlet.x_axis_time[(i+1)*newtimeshape//segment_number]
@@ -103,13 +103,13 @@ class  Buono_Brutto_Cattivo:
             # print(time1)
             #print(time2)
             good_dict[i[0]] = wavlet_list[i[0]]
-            # ax2.axvspan(x1,x2,alpha=0.3, color='black')
-        # plt.figure()
-        # sns.heatmap(np.abs(allfile.loc[allfile['y'] == 1].T.corr()))
-        # plt.figure()
-        # sns.heatmap(allfile.T.corr())
+            #ax2.axvspan(x1,x2,alpha=0.3, color='black')
+        #plt.figure()
+        #sns.heatmap(np.abs(allfile.loc[allfile['y'] == 1].T.corr()))
+        #plt.figure()
+        #sns.heatmap(allfile.T.corr())
         
-        # plt.show()
+        plt.show()
         return good_dict, bad_dict
 
     def FeatureSpectralDecrease(self,X):
@@ -176,8 +176,8 @@ class  Buono_Brutto_Cattivo:
         feats.append(entropy(x))
         return feats
 
-    def features_generator(self,wavlet_matrix=None):
-        if not wavlet_matrix:
+    def features_generator(self,wav=None):
+        if not wav:
             good_features_dict={}
             bad_features_dict={}
             good_dict,bad_dict=self.separate()
@@ -206,19 +206,37 @@ class  Buono_Brutto_Cattivo:
                 bad_features_dict[ind] = features_dict
             return good_dict,good_features_dict,bad_dict,bad_features_dict
         else:
-            coef_list = wavlet_matrix
-            bulat = np.array(self.simpleFeats(coef_list.flatten()))
-            fsd = np.max(self.FeatureSpectralDecrease(coef_list)[0])
-            fsf = np.max(self.FeatureSpectralFlux(coef_list))
-            fss = np.max(self.FeatureSpectralSlope(coef_list))
-            fsflat = np.max(self.FeatureSpectralFlatness(coef_list))
-            features_dict = {'mean': bulat[0], 'std': bulat[1], 'max': bulat[2], 'min': bulat[3], 'skew': bulat[4],
-                             'kurtosis': bulat[5], 'entropy': bulat[6], 'fsd': fsd, 'fsf': fsf, 'fss': fss,
-                             'fsflat': fsflat}
-            return wavlet_matrix, features_dict
+            wave = f5s.read_wave(str(wav))
+            wavlet = f5a.Wavlet(wave)
+            sig=wave.ys
+            features_dict={}
+            newtimeshape =wavlet.c_wavlet_coef.shape[1] // self.segment_number * self.segment_number
+            newtimeshapesig = sig.shape[0] // self.segment_number * self.segment_number
+            wavlet_list = np.hsplit(wavlet.c_wavlet_coef[:, :newtimeshape], self.segment_number)
+            siglist=np.hsplit(sig[:newtimeshapesig],self.segment_number)
+            for ind,matrix in enumerate(wavlet_list):
+                coef_list = matrix
+                bulat = np.array(self.simpleFeats(coef_list.flatten()))
+                bulat_for_sig= np.array(self.simpleFeats(siglist[ind]))
+                fsd = np.max(self.FeatureSpectralDecrease(coef_list)[0])
+                fsf = np.max(self.FeatureSpectralFlux(coef_list))
+                fss = np.max(self.FeatureSpectralSlope(coef_list))
+                fsflat = np.max(self.FeatureSpectralFlatness(coef_list))
+                features_dict[ind] = {'mean_sig': bulat_for_sig[0], 'std_sig': bulat_for_sig[1], 'max_sig': bulat_for_sig[2], 'min_sig': bulat_for_sig[3], 'skew_sig': bulat_for_sig[4],
+                                 'kurtosis_sig': bulat_for_sig[5], 'mean': bulat[0], 'std': bulat[1], 'max': bulat[2], 'min': bulat[3], 'skew': bulat[4],
+                                 'kurtosis': bulat[5], 'entropy': bulat[6], 'fsd': fsd, 'fsf': fsf, 'fss': fss,
+                                 'fsflat': fsflat}
+            return wavlet_list, features_dict
         pass
 
 if __name__=='__main__':
 
-    bbc=Buono_Brutto_Cattivo(r'dev_data\fan\train\normal_id_06_00000003.wav')
-    bbc.separate()
+
+    wave = f5s.read_wave(r'dev_data\fan\train\normal_id_06_00000003.wav')
+    wavelet = f5a.Wavlet(wave)
+    wavelet.wavlet_plot()
+    print(wavelet.c_wavlet_coef.shape)
+    plt.show()
+    # bbc=Buono_Brutto_Cattivo(r'dev_data\fan\train\normal_id_06_00000003.wav')
+    # _,f=bbc.separate()
+    # #print(f)
