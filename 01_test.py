@@ -151,7 +151,7 @@ if __name__ == "__main__":
     # check mode
     # "development": mode == True
     # "evaluation": mode == False
-    mode = com.command_line_chk()
+    mode = True
     if mode is None:
         sys.exit(-1)
 
@@ -211,6 +211,7 @@ if __name__ == "__main__":
                                                     n_fft=param["feature"]["n_fft"],
                                                     hop_length=param["feature"]["hop_length"],
                                                     power=param["feature"]["power"])
+                    data = data.reshape((data.shape[0], 128, 4, 1))
                     errors = numpy.mean(numpy.square(data - model.predict(data)), axis=1)
                     y_pred[file_idx] = numpy.mean(errors)
                     anomaly_score_list.append([os.path.basename(file_path), y_pred[file_idx]])

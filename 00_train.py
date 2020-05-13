@@ -23,7 +23,6 @@ from tqdm import tqdm
 # original lib
 import common as com
 import keras_model
-
 ########################################################################
 
 
@@ -111,13 +110,10 @@ def list_to_vector_array(file_list,
                                                 n_fft=n_fft,
                                                 hop_length=hop_length,
                                                 power=power)
-        if vector_array is None:
-            continue
         if idx == 0:
-            dataset = vector_array
-            continue
-        dataset = numpy.vstack((dataset, vector_array))
-        print(dataset.shape)
+            dataset = numpy.zeros((vector_array.shape[0] * len(file_list), dims), float)
+        dataset[vector_array.shape[0] * idx: vector_array.shape[0] * (idx + 1), :] = vector_array
+
     return dataset
 
 
@@ -156,7 +152,7 @@ if __name__ == "__main__":
     # check mode
     # "development": mode == True
     # "evaluation": mode == False
-    mode = True#com.command_line_chk()
+    mode = True
     if mode is None:
         sys.exit(-1)
         
@@ -195,10 +191,10 @@ if __name__ == "__main__":
                                           n_fft=param["feature"]["n_fft"],
                                           hop_length=param["feature"]["hop_length"],
                                           power=param["feature"]["power"])
-
+        train_data = train_data.reshape((train_data.shape[0], 128, 4, 1))
         # train model
         print("============== MODEL TRAINING ==============")
-        model = keras_model.get_model(param["feature"]["n_mels"] * param["feature"]["frames"])
+        model = keras_model.get_model(train_data.shape[1:])
         model.summary()
 
         model.compile(**param["fit"]["compile"])
