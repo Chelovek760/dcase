@@ -21,39 +21,46 @@ files = pathlib.Path(directory)
 files = files.glob('*.wav')
 files=list(files)
 class  Buono_Brutto_Cattivo:
-    def __init__(self,file_name=None,segment_number=99):
-        self.segment_number=segment_number
-        self.filename=file_name
-    def separate(self):
-        file=self.filename
-        segment_number=self.segment_number
-        wave = f5s.read_wave(str(file))
+    def __init__(self, file_name=None, segment_number=99):
+        self.segment_number = segment_number
+        self.filename = file_name
+
+    def separate(self, ys=None, fr=16000):
+        if ys[0]:
+            wave = f5s.Wave(ys, framerate=fr)
+        else:
+            file = self.filename
+            wave = f5s.read_wave(str(file))
+        segment_number = self.segment_number
         wavlet = f5a.Wavlet(wave)
-        dur=wavlet.x_axis_time[-1]/segment_number
-        bad_dict = {'freq': wavlet.y_axis_freq,'dur_part':dur}
-        good_dict = {'freq': wavlet.y_axis_freq,'dur_part':dur}
-        fig, ax1, ax2 = wavlet.wavlet_plot()
-        newtimeshape=wavlet.c_wavlet_coef.shape[1]//segment_number*segment_number
-        #print(wavlet.c_wavlet_coef.shape[1],newtimeshape)
-        wavlet_list=np.hsplit(wavlet.c_wavlet_coef[:,:newtimeshape], segment_number)
-        #print(wavlet_list[0].shape[0]*wavlet_list[0].shape[1])
-        X=np.zeros((segment_number,wavlet_list[0].shape[0]*wavlet_list[0].shape[1]))
-        for id,wavelet_part in enumerate(wavlet_list):
-            X[id,:]=wavelet_part.flatten()
+        dur = wavlet.x_axis_time[-1] / segment_number
+        bad_dict = {'freq': wavlet.y_axis_freq, 'dur_part': dur}
+        good_dict = {'freq': wavlet.y_axis_freq, 'dur_part': dur}
+        # fig, ax1, ax2 = wavlet.wavlet_plot()
+
+        newtimeshape = wavlet.c_wavlet_coef.shape[1] // segment_number * segment_number
+        newys_shape = wavlet.sig.shape[0] // segment_number * segment_number
+        sig_list = np.hsplit(wavlet.sig[:newys_shape], segment_number)
+        # print(wavlet.c_wavlet_coef.shape[1],newtimeshape)
+        wavlet_list = np.hsplit(wavlet.c_wavlet_coef[:, :newtimeshape], segment_number)
+        # print(wavlet_list[0].shape[0]*wavlet_list[0].shape[1])
+        X = np.zeros((segment_number, wavlet_list[0].shape[0] * wavlet_list[0].shape[1]))
+        for id, wavelet_part in enumerate(wavlet_list):
+            X[id, :] = wavelet_part.flatten()
         pca = PCA(n_components=2)
         Xnew = pca.fit_transform(X)
         model = IsolationForest(n_estimators=500)
-        res=model.fit_predict(Xnew)
+        res = model.fit_predict(Xnew)
         countminus=np.sum(res==-1)
         if countminus>segment_number//2:
             res=res*-1
         for i in np.argwhere(res==-1):
             x1,x2=wavlet.x_axis_time[i*newtimeshape//segment_number],wavlet.x_axis_time[(i+1)*newtimeshape//segment_number]
-            ax2.axvspan(x1,x2,alpha=0.3, color='red')
+            # ax2.axvspan(x1,x2,alpha=0.3, color='red')
             #ax2.text((x1+x2)/2,wavlet.y_axis_freq[wavlet.y_axis_freq.shape[0]//2],str(i),color='blue')
         for i in np.argwhere(res==1):
             x1,x2=wavlet.x_axis_time[i*newtimeshape//segment_number],wavlet.x_axis_time[(i+1)*newtimeshape//segment_number]
-            ax2.text((x1+x2)/2,wavlet.y_axis_freq[wavlet.y_axis_freq.shape[0]//2],str(i),color='red')
+            # ax2.text((x1+x2)/2,wavlet.y_axis_freq[wavlet.y_axis_freq.shape[0]//2],str(i),color='red')
         allfile=pd.DataFrame(X)
         allfile['y']=res
         good_frames=allfile.loc[allfile['y'] == 1].T
@@ -84,33 +91,37 @@ class  Buono_Brutto_Cattivo:
             if row[col_list].mean()>lim:
                 res[index]=1
         repared=allfile.copy()
-        repared['y']=res
+        repared['y'] = res
         # print('Bad_time:')
-
-        for i in np.argwhere(res==-1):
-            x1,x2=wavlet.x_axis_time[i*newtimeshape//segment_number],wavlet.x_axis_time[(i+1)*newtimeshape//segment_number]
-            time1 = float(wavlet.x_axis_time[i*newtimeshape//segment_number])
-            time2 = float(wavlet.x_axis_time[(i+1)*newtimeshape//segment_number])
+        bad_sig_list = {}
+        for i in np.argwhere(res == -1):
+            x1, x2 = wavlet.x_axis_time[i * newtimeshape // segment_number], wavlet.x_axis_time[
+                (i + 1) * newtimeshape // segment_number]
+            time1 = float(wavlet.x_axis_time[i * newtimeshape // segment_number])
+            time2 = float(wavlet.x_axis_time[(i + 1) * newtimeshape // segment_number])
             # print(time1)
-            #print(time2)
-            bad_dict[i[0]]=wavlet_list[i[0]]
-            ax2.axvspan(x1,x2,alpha=0.3, color='black')
-
-        for i in np.argwhere(res==1):
-            x1,x2=wavlet.x_axis_time[i*newtimeshape//segment_number],wavlet.x_axis_time[(i+1)*newtimeshape//segment_number]
-            time1 = float(wavlet.x_axis_time[i*newtimeshape//segment_number])
-            time2 = float(wavlet.x_axis_time[(i+1)*newtimeshape//segment_number])
+            # print(time2)
+            bad_dict[i[0]] = wavlet_list[i[0]]
+            bad_sig_list[i[0]] = sig_list[i[0]]
+            # ax2.axvspan(x1,x2,alpha=0.3, color='black')
+        good_sig_list = {}
+        for i in np.argwhere(res == 1):
+            x1, x2 = wavlet.x_axis_time[i * newtimeshape // segment_number], wavlet.x_axis_time[
+                (i + 1) * newtimeshape // segment_number]
+            time1 = float(wavlet.x_axis_time[i * newtimeshape // segment_number])
+            time2 = float(wavlet.x_axis_time[(i + 1) * newtimeshape // segment_number])
             # print(time1)
-            #print(time2)
+            # print(time2)
+            good_sig_list[i[0]] = sig_list[i[0]]
             good_dict[i[0]] = wavlet_list[i[0]]
-            #ax2.axvspan(x1,x2,alpha=0.3, color='black')
-        #plt.figure()
-        #sns.heatmap(np.abs(allfile.loc[allfile['y'] == 1].T.corr()))
-        #plt.figure()
-        #sns.heatmap(allfile.T.corr())
-        
-        plt.show()
-        return good_dict, bad_dict
+            # ax2.axvspan(x1,x2,alpha=0.3, color='black')
+        # plt.figure()
+        # sns.heatmap(np.abs(allfile.loc[allfile['y'] == 1].T.corr()))
+        # plt.figure()
+        # sns.heatmap(allfile.T.corr())
+
+        # plt.show()
+        return good_dict, good_sig_list, bad_dict, bad_sig_list
 
     def FeatureSpectralDecrease(self,X):
         # compute index vector
