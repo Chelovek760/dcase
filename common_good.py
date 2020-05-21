@@ -181,19 +181,33 @@ def file_to_vector_array(file_name,
     # 02 generate melspectrogram using librosa
     y, sr = file_load(file_name)
 
+    bbc = Buono_Brutto_Cattivo(segment_number=10)
+    _, y_list_good, _, _ = bbc.separate(y, sr)
+    y = numpy.concatenate(y_list_good)
+    mel_spectrogram = librosa.feature.melspectrogram(y=y,
+                                                     sr=sr,
+                                                     n_fft=n_fft,
+                                                     hop_length=hop_length,
+                                                     n_mels=n_mels,
+                                                     power=power)
+
+    log_mel_spectrogram = 20.0 / power * numpy.log10(mel_spectrogram + sys.float_info.epsilon)
+
     # 03 generate spectrogramm with augmentstion or not. Depend on method param
-    spectrogram = spectrogramm_augmentation(y=y,
-                                            sr=sr,
-                                            method=method,
-                                            n_mels=n_mels,
-                                            frames=frames,
-                                            n_fft=n_fft,
-                                            hop_length=hop_length,
-                                            power=power)
+    if y == 0:
+        return numpy.empty((0, dims))
+    # spectrogram = spectrogramm_augmentation(y=y,
+    #                                         sr=sr,
+    #                                         method=method,
+    #                                         n_mels=n_mels,
+    #                                         frames=frames,
+    #                                         n_fft=n_fft,
+    #                                         hop_length=hop_length,
+    #                                         power=power)
 
     # 04 add some new features
     # features = add_new_feature(mel_spectrogram, log_mel_spectrogram)
-    features = spectrogram
+    features = log_mel_spectrogram
 
     # 05 calculate total vector size
     vector_array_size = len(features[0, :]) - frames + 1
