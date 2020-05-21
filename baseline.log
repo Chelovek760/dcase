@@ -12815,6 +12815,7 @@ DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install t
 INFO: :load_directory <- development
 INFO: :target_dir : D:\Projects\dcase\dev_data\fan
 INFO: :train_file num : 3675
+<<<<<<< HEAD
 INFO: :load_directory <- development
 WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:68: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
 
@@ -12956,4 +12957,37 @@ WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packag
 WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\optimizers.py:757: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
 
 INFO: :target_dir : C:\Users\markh\Work\my_dcase\testing\dev_data\fan
+=======
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+>>>>>>> 551f487a18bcce36ef31c3855c150de4eef093d2
 INFO: :train_file num : 3675

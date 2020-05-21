@@ -119,10 +119,14 @@ def list_to_vector_array(file_list,
             dataset = numpy.zeros((vector_array.shape[0] * len(file_list), dims), float)
             print(dataset.shape)
         dataset[vector_array.shape[0] * idx: vector_array.shape[0] * (idx + 1), :] = vector_array
+<<<<<<< HEAD
 
     dataset=dataset[~numpy.all(dataset == 0, axis=1)]
     print(dataset.shape)
     
+=======
+    dataset = dataset[~numpy.all(dataset == 0, axis=1)]
+>>>>>>> 551f487a18bcce36ef31c3855c150de4eef093d2
     return dataset
 
 
