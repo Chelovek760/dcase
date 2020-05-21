@@ -12787,3 +12787,31 @@ INFO: :AUC : 0.4578393351800554
 INFO: :pAUC : 0.5117364047237206
 INFO: :AUC and pAUC results -> ./result/result.csv
 >>>>>>> 7170db90b8c6e364615bd7f660e0d83394f19783
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675

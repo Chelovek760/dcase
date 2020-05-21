@@ -21,7 +21,7 @@ import numpy
 # from import
 from tqdm import tqdm
 # original lib
-#import common as com
+#import common_good as com
 import keras_model
 import common_good as com
 ########################################################################

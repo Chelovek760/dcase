@@ -144,9 +144,6 @@ def spectrogramm_augmentation(y,
         y = y + numpy.random.uniform(-amp, amp, len(y))
     if method == 'shuffle':
         y = shuffle_generator(y, len(y))
-    bbc = Buono_Brutto_Cattivo(segment_number=10)
-    _, y_list_good, _, _ = bbc.separate(y, sr)
-    y = numpy.concatenate(y_list_good)
     mel_spectrogram = librosa.feature.melspectrogram(y=y,
                                                      sr=sr,
                                                      n_fft=n_fft,
@@ -180,19 +177,17 @@ def file_to_vector_array(file_name,
     dims = n_mels * frames
     # 02 generate melspectrogram using librosa
     y, sr = file_load(file_name)
-
     bbc = Buono_Brutto_Cattivo(segment_number=10)
     _, y_list_good, _, _ = bbc.separate(y, sr)
-    y = numpy.concatenate(y_list_good)
-    mel_spectrogram = librosa.feature.melspectrogram(y=y,
-                                                     sr=sr,
-                                                     n_fft=n_fft,
-                                                     hop_length=hop_length,
-                                                     n_mels=n_mels,
-                                                     power=power)
+    segment_ind = list(y_list_good.keys())
+    if len(segment_ind) < 1:
+        return numpy.empty((0, dims))
+    big_wave = y_list_good[segment_ind[0]]
 
-    log_mel_spectrogram = 20.0 / power * numpy.log10(mel_spectrogram + sys.float_info.epsilon)
+    for one_wavlet in segment_ind[1:]:
+        big_wave = numpy.hstack((big_wave, y_list_good[one_wavlet]))
 
+    y = big_wave
     # 03 generate spectrogramm with augmentstion or not. Depend on method param
     if y == 0:
         return numpy.empty((0, dims))
