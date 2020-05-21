@@ -178,19 +178,18 @@ def file_to_vector_array(file_name,
     # 02 generate melspectrogram using librosa
     y, sr = file_load(file_name)
     bbc = Buono_Brutto_Cattivo(segment_number=10)
-    _, y_list_good, _, _ = bbc.separate(y, sr)
-    segment_ind = list(y_list_good.keys())
+    y_list_good, _, _, _ = bbc.separate(y, sr)
+    segment_ind = list(y_list_good.keys())[2:]
     if len(segment_ind) < 1:
         return numpy.empty((0, dims))
     big_wave = y_list_good[segment_ind[0]]
 
-    for one_wavlet in segment_ind[1:]:
+    for one_wavlet in segment_ind:
         big_wave = numpy.hstack((big_wave, y_list_good[one_wavlet]))
 
     y = big_wave
     # 03 generate spectrogramm with augmentstion or not. Depend on method param
-    if y == 0:
-        return numpy.empty((0, dims))
+
     # spectrogram = spectrogramm_augmentation(y=y,
     #                                         sr=sr,
     #                                         method=method,
@@ -202,7 +201,7 @@ def file_to_vector_array(file_name,
 
     # 04 add some new features
     # features = add_new_feature(mel_spectrogram, log_mel_spectrogram)
-    features = log_mel_spectrogram
+    features = spectrogram
 
     # 05 calculate total vector size
     vector_array_size = len(features[0, :]) - frames + 1
