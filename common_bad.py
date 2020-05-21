@@ -185,7 +185,7 @@ def file_to_vector_array(file_name,
     dims = bbc.newshape[0] * bbc.newshape[1] // disc
     segment_ind = list(y_list_bad.keys())[2:]
     if len(segment_ind) < 1:
-        return numpy.empty((0, dims))
+        return numpy.empty((0, dims)), dims
     big_wave = y_list_bad[segment_ind[0]]
 
     for one_wavlet in segment_ind[1:]:
@@ -209,7 +209,7 @@ def file_to_vector_array(file_name,
     vector_array_size = len(features[0, :]) - frames + 1
     # 06 skip too short clips
     if vector_array_size < 1:
-        return numpy.empty((0, dims))
+        return numpy.empty((0, dims)), dims
 
     # 07 generate feature vectors by concatenating multiframes
     vector_array = numpy.zeros((vector_array_size, dims))
