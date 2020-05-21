@@ -84,7 +84,9 @@ def list_to_vector_array(file_list,
                          frames=5,
                          n_fft=1024,
                          hop_length=512,
-                         power=2.0):
+                         power=2.0,
+                         method='normal'
+                         ):
     """
     convert the file_list to a vector array.
     file_to_vector_array() is iterated, and the output vector array is concatenated.
@@ -101,7 +103,6 @@ def list_to_vector_array(file_list,
     """
     # calculate the number of dimensions
     dims = n_mels * frames
-
     # iterate file_to_vector_array()
     for idx in tqdm(range(len(file_list)), desc=msg):
         vector_array = com.file_to_vector_array(file_list[idx],
@@ -109,7 +110,8 @@ def list_to_vector_array(file_list,
                                                 frames=frames,
                                                 n_fft=n_fft,
                                                 hop_length=hop_length,
-                                                power=power)
+                                                power=power,
+                                                method=method)
         if idx == 0:
             dataset = numpy.zeros((vector_array.shape[0] * len(file_list), dims), float)
         dataset[vector_array.shape[0] * idx: vector_array.shape[0] * (idx + 1), :] = vector_array
@@ -152,7 +154,7 @@ if __name__ == "__main__":
     # check mode
     # "development": mode == True
     # "evaluation": mode == False
-    mode = True
+    mode = True  # com.command_line_chk()
     if mode is None:
         sys.exit(-1)
         
@@ -173,6 +175,7 @@ if __name__ == "__main__":
         # set path
         machine_type = os.path.split(target_dir)[1]
         model_file_path = "{model}/model_{machine_type}.hdf5".format(model=param["model_directory"],
+
                                                                      machine_type=machine_type)
         history_img = "{model}/history_{machine_type}.png".format(model=param["model_directory"],
                                                                   machine_type=machine_type)
@@ -181,31 +184,35 @@ if __name__ == "__main__":
             com.logger.info("model exists")
             continue
 
-        # generate dataset
-        print("============== DATASET_GENERATOR ==============")
-        files = file_list_generator(target_dir)
-        train_data = list_to_vector_array(files,
-                                          msg="generate train_dataset",
-                                          n_mels=param["feature"]["n_mels"],
-                                          frames=param["feature"]["frames"],
-                                          n_fft=param["feature"]["n_fft"],
-                                          hop_length=param["feature"]["hop_length"],
-                                          power=param["feature"]["power"])
-        train_data = train_data.reshape((train_data.shape[0], 128, 4, 1))
         # train model
-        print("============== MODEL TRAINING ==============")
-        model = keras_model.get_model(train_data.shape[1:])
+        print("============== MODEL CREATING ==============")
+        model = keras_model.get_model(param['feature']['n_mels'] * param["feature"]["frames"])
         model.summary()
 
         model.compile(**param["fit"]["compile"])
-        history = model.fit(train_data,
-                            train_data,
-                            epochs=param["fit"]["epochs"],
-                            batch_size=param["fit"]["batch_size"],
-                            shuffle=param["fit"]["shuffle"],
-                            validation_split=param["fit"]["validation_split"],
-                            verbose=param["fit"]["verbose"])
-        
+        # generate dataset
+
+        for method_augm in param['feature']['augmentation']:
+            print("============== DATASET_", method_augm, "_GENERATOR ==============")
+            files = file_list_generator(target_dir)
+            train_data = list_to_vector_array(files,
+                                              msg="generate train_dataset",
+                                              n_mels=param["feature"]["n_mels"],
+                                              frames=param["feature"]["frames"],
+                                              n_fft=param["feature"]["n_fft"],
+                                              hop_length=param["feature"]["hop_length"],
+                                              power=param["feature"]["power"],
+                                              method=method_augm)
+
+            print("============== MODEL_", method_augm, "_TRAINING ==============")
+            history = model.fit(train_data,
+                                train_data,
+                                epochs=param["fit"]["epochs"],
+                                batch_size=param["fit"]["batch_size"],
+                                shuffle=param["fit"]["shuffle"],
+                                validation_split=param["fit"]["validation_split"],
+                                verbose=param["fit"]["verbose"])
+            del train_data
         visualizer.loss_plot(history.history["loss"], history.history["val_loss"])
         visualizer.save_figure(history_img)
         model.save(model_file_path)

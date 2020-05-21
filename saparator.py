@@ -26,7 +26,7 @@ class  Buono_Brutto_Cattivo:
         self.filename = file_name
 
     def separate(self, ys=None, fr=16000):
-        if ys[0]:
+        if ys is not None:
             wave = f5s.Wave(ys, framerate=fr)
         else:
             file = self.filename

@@ -9,15 +9,18 @@ import matplotlib.pyplot as plt
 def shuffle_generator(signal, len_out):
     bbc = Buono_Brutto_Cattivo(segment_number=99)
     _, gg, _, _ = bbc.separate(signal)
-    big_wave = gg[0]
+    segment_ind = list(gg.keys())
+    big_wave = gg[segment_ind[0]]
 
-    for one_wavlet in list(gg.keys())[1:]:
+    for one_wavlet in segment_ind[1:]:
         big_wave = np.hstack((big_wave, gg[one_wavlet]))
     size_wave = big_wave.shape
     out_ys = np.zeros((len_out))
-    for ind in range(0, len_out, 2):
-        out_ys[ind] = big_wave[np.random.randint(0, size_wave[0])]
-        out_ys[ind + 1] = big_wave[np.random.randint(0, size_wave[0])]
+    window_size = 2
+    for ind in range(0, len_out, window_size):
+        rind = np.random.randint(0, size_wave[0] - window_size)
+        out_ys[ind:ind + window_size] = big_wave[rind:rind + window_size]
+
     return out_ys
 
 
@@ -27,6 +30,7 @@ if __name__ == '__main__':
     files = files.glob('*.wav')
     files = list(files)[:1]
     signal, fr = librosa.load(files[0], sr=None, mono=True)
+    signal = np.array([0] * 10000 + [1] * 1000)
     signal_s = shuffle_generator(signal, fr * 10)
     plt.figure()
     plt.plot(signal_s)
