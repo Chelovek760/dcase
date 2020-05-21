@@ -7,10 +7,11 @@ result
 pic
 feature
 /env
-.ipynb_checkpoints/Untitled-checkpoint.ipynb
+/.ipynb_checkpoints
 config.py
 /thrash
 /vggish_sup/
 /venv/
 /models/
 /.vscode/
+/vggish_soup

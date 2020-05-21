@@ -159,7 +159,7 @@ if __name__ == "__main__":
     # check mode
     # "development": mode == True
     # "evaluation": mode == False
-    mode = True
+    mode = com.command_line_chk()
     if mode is None:
         sys.exit(-1)
 

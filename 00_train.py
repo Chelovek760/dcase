@@ -23,6 +23,7 @@ from tqdm import tqdm
 # original lib
 import common as com
 import keras_model
+
 ########################################################################
 
 
@@ -113,9 +114,10 @@ def list_to_vector_array(file_list,
                                                 power=power,
                                                 method=method)
         if idx == 0:
-            dataset = numpy.zeros((vector_array.shape[0] * len(file_list), dims), float)
-        dataset[vector_array.shape[0] * idx: vector_array.shape[0] * (idx + 1), :] = vector_array
-
+            dataset = vector_array
+            continue
+        dataset = numpy.vstack((dataset, vector_array))
+        #print(dataset.shape)
     return dataset
 
 
@@ -154,7 +156,11 @@ if __name__ == "__main__":
     # check mode
     # "development": mode == True
     # "evaluation": mode == False
+<<<<<<< HEAD
+    mode = True#com.command_line_chk()
+=======
     mode = True  # com.command_line_chk()
+>>>>>>> 7170db90b8c6e364615bd7f660e0d83394f19783
     if mode is None:
         sys.exit(-1)
         
@@ -184,9 +190,26 @@ if __name__ == "__main__":
             com.logger.info("model exists")
             continue
 
+<<<<<<< HEAD
+        # generate dataset
+        print("============== DATASET_GENERATOR ==============")
+        files = file_list_generator(target_dir)
+        train_data = list_to_vector_array(files,
+                                          msg="generate train_dataset",
+                                          n_mels=param["feature"]["n_mels"],
+                                          frames=param["feature"]["frames"],
+                                          n_fft=param["feature"]["n_fft"],
+                                          hop_length=param["feature"]["hop_length"],
+                                          power=param["feature"]["power"])
+
+        # train model
+        print("============== MODEL TRAINING ==============")
+        model = keras_model.get_model(1610)
+=======
         # train model
         print("============== MODEL CREATING ==============")
         model = keras_model.get_model(param['feature']['n_mels'] * param["feature"]["frames"])
+>>>>>>> 7170db90b8c6e364615bd7f660e0d83394f19783
         model.summary()
 
         model.compile(**param["fit"]["compile"])
