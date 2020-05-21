@@ -105,16 +105,16 @@ def list_to_vector_array(file_list,
         * dataset.shape = (number of feature vectors, dimensions of feature vectors)
     """
     # calculate the number of dimensions
-    dims = n_mels * frames
+
     # iterate file_to_vector_array()
     for idx in tqdm(range(len(file_list)), desc=msg):
-        vector_array = com.file_to_vector_array(file_list[idx],
-                                                n_mels=n_mels,
-                                                frames=frames,
-                                                n_fft=n_fft,
-                                                hop_length=hop_length,
-                                                power=power,
-                                                method=method)
+        vector_array, dims = com.file_to_vector_array(file_list[idx],
+                                                      n_mels=n_mels,
+                                                      frames=frames,
+                                                      n_fft=n_fft,
+                                                      hop_length=hop_length,
+                                                      power=power,
+                                                      method=method)
         if idx == 0:
             dataset = numpy.zeros((vector_array.shape[0] * len(file_list), dims), float)
         dataset[vector_array.shape[0] * idx: vector_array.shape[0] * (idx + 1), :] = vector_array
