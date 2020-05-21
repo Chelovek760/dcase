@@ -8,10 +8,12 @@ max_fpr : 0.1
 
 feature:
   n_mels: 128
-  frames : 5
+  frames: 5
+  augmentation: ['normal', 'shuffle', 'shuffle', 'shuffle']
   n_fft: 1024
   hop_length: 512
   power: 2.0
+  size_feature: 143
 
 
 fit:
