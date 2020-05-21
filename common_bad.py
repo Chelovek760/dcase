@@ -175,28 +175,31 @@ def file_to_vector_array(file_name,
         * dataset.shape = (dataset_size, feature_vector_length)
     """
     # 01 calculate the number of dimensions
-    dims = n_mels * frames
+    # dims = n_mels * frames
     # 02 generate melspectrogram using librosa
     y, sr = file_load(file_name)
-    bbc = Buono_Brutto_Cattivo(segment_number=10)
-    _, _, _, y_list_bad = bbc.separate(y, sr)
-    segment_ind = list(y_list_bad.keys())
+    bbc = Buono_Brutto_Cattivo(segment_number=20)
+    _, _, y_list_bad, _ = bbc.separate(y, sr)
+    dims = bbc.newshape[0] * bbc.newshape[1]
+    segment_ind = list(y_list_bad.keys())[2:]
+    print(segment_ind)
+    print(len(segment_ind))
     if len(segment_ind) < 1:
         return numpy.empty((0, dims))
     big_wave = y_list_bad[segment_ind[0]]
 
     for one_wavlet in segment_ind[1:]:
         big_wave = numpy.hstack((big_wave, y_list_bad[one_wavlet]))
-    y = big_wave
+    spectrogram = big_wave
     # 03 generate spectrogramm with augmentstion or not. Depend on method param
-    spectrogram = spectrogramm_augmentation(y=y,
-                                            sr=sr,
-                                            method=method,
-                                            n_mels=n_mels,
-                                            frames=frames,
-                                            n_fft=n_fft,
-                                            hop_length=hop_length,
-                                            power=power)
+    # spectrogram = spectrogramm_augmentation(y=y,
+    #                                         sr=sr,
+    #                                         method=method,
+    #                                         n_mels=n_mels,
+    #                                         frames=frames,
+    #                                         n_fft=n_fft,
+    #                                         hop_length=hop_length,
+    #                                         power=power)
 
     # 04 add some new features
     # features = add_new_feature(mel_spectrogram, log_mel_spectrogram)
@@ -204,7 +207,6 @@ def file_to_vector_array(file_name,
 
     # 05 calculate total vector size
     vector_array_size = len(features[0, :]) - frames + 1
-
     # 06 skip too short clips
     if vector_array_size < 1:
         return numpy.empty((0, dims))

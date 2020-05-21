@@ -40,6 +40,7 @@ class  Buono_Brutto_Cattivo:
 
         newtimeshape = wavlet.c_wavlet_coef.shape[1] // segment_number * segment_number
         newys_shape = wavlet.sig.shape[0] // segment_number * segment_number
+        self.newshape = (wavlet.c_wavlet_coef.shape[0], newtimeshape)
         sig_list = np.hsplit(wavlet.sig[:newys_shape], segment_number)
         # print(wavlet.c_wavlet_coef.shape[1],newtimeshape)
         wavlet_list = np.hsplit(wavlet.c_wavlet_coef[:, :newtimeshape], segment_number)
