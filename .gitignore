@@ -7,11 +7,11 @@ result
 pic
 feature
 /env
-.vscode
-.ipynb_checkpoints/Untitled-checkpoint.ipynb
+/.ipynb_checkpoints
 config.py
 /thrash
-.ipynb_checkpoints/VGGish_Audio_Embedding-checkpoint.ipynb
-models
-vggish_pca_params.npz
-vggish_model.ckpt
+/vggish_sup/
+/venv/
+/models/
+/.vscode/
+/vggish_soup
