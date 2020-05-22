@@ -107,17 +107,21 @@ def list_to_vector_array(file_list,
     # calculate the number of dimensions
 
     # iterate file_to_vector_array()
+
     for idx in tqdm(range(len(file_list)), desc=msg):
-        vector_array, dims = com.file_to_vector_array(file_list[idx],
-                                                      n_mels=n_mels,
-                                                      frames=frames,
-                                                      n_fft=n_fft,
-                                                      hop_length=hop_length,
-                                                      power=power,
-                                                      method=method)
-        if idx == 0:
-            dataset = numpy.zeros((vector_array.shape[0] * len(file_list), dims), float)
-        dataset[vector_array.shape[0] * idx: vector_array.shape[0] * (idx + 1), :] = vector_array
+        try:
+            vector_array, dims = com.file_to_vector_array(file_list[idx],
+                                                          n_mels=n_mels,
+                                                          frames=frames,
+                                                          n_fft=n_fft,
+                                                          hop_length=hop_length,
+                                                          power=power,
+                                                          method=method)
+            if idx == 0:
+                dataset = numpy.zeros((vector_array.shape[0] * len(file_list), dims), float)
+            dataset[vector_array.shape[0] * idx: vector_array.shape[0] * (idx + 1), :] = vector_array
+        except:
+            continue
     dataset = dataset[~numpy.all(dataset == 0, axis=1)]
     return dataset
 
@@ -191,9 +195,17 @@ if __name__ == "__main__":
 
         # train model
         print("============== MODEL CREATING ==============")
-        model = keras_model.get_model(param['feature']['n_mels'] * param["feature"]["frames"])
+        files = file_list_generator(target_dir)[0]
+        train_data = list_to_vector_array([files],
+                                          msg="generate train_dataset",
+                                          n_mels=param["feature"]["n_mels"],
+                                          frames=param["feature"]["frames"],
+                                          n_fft=param["feature"]["n_fft"],
+                                          hop_length=param["feature"]["hop_length"],
+                                          power=param["feature"]["power"],
+                                          method='normal')
+        model = keras_model.get_model(train_data.shape[1])
         model.summary()
-
         model.compile(**param["fit"]["compile"])
         # generate dataset
 
