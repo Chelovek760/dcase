@@ -185,12 +185,15 @@ def file_to_vector_array(file_name,
     dims = bbc.newshape[0] * bbc.newshape[1] // disc
     segment_ind = list(y_list_bad.keys())[2:]
     if len(segment_ind) < 1:
-        return numpy.empty((0, dims)), dims
-    big_wave = y_list_bad[segment_ind[0]]
+        print(0)
+        spectrogram = numpy.zeros((2, 2))
 
-    for one_wavlet in segment_ind[1:]:
-        big_wave = numpy.hstack((big_wave, y_list_bad[one_wavlet]))
-    spectrogram = razryad_2d(big_wave, 1, 5)
+    else:
+        big_wave = y_list_bad[segment_ind[0]]
+
+        for one_wavlet in segment_ind[1:]:
+            big_wave = numpy.hstack((big_wave, y_list_bad[one_wavlet]))
+        spectrogram = razryad_2d(big_wave, 1, disc)
     # 03 generate spectrogramm with augmentstion or not. Depend on method param
     # spectrogram = spectrogramm_augmentation(y=y,
     #                                         sr=sr,
@@ -204,7 +207,6 @@ def file_to_vector_array(file_name,
     # 04 add some new features
     # features = add_new_feature(mel_spectrogram, log_mel_spectrogram)
     features = spectrogram
-
     # 05 calculate total vector size
     vector_array_size = len(features[0, :]) - frames + 1
     # 06 skip too short clips
