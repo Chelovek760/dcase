@@ -24,6 +24,7 @@ import librosa.feature
 import librosa.display
 import yaml
 
+from F5signal import razryad_2d
 from saparator import Buono_Brutto_Cattivo
 from shuffle_augmentator import shuffle_generator
 
@@ -144,6 +145,7 @@ def spectrogramm_augmentation(y,
         y = y + numpy.random.uniform(-amp, amp, len(y))
     if method == 'shuffle':
         y = shuffle_generator(y, len(y))
+
     mel_spectrogram = librosa.feature.melspectrogram(y=y,
                                                      sr=sr,
                                                      n_fft=n_fft,
@@ -174,22 +176,22 @@ def file_to_vector_array(file_name,
         * dataset.shape = (dataset_size, feature_vector_length)
     """
     # 01 calculate the number of dimensions
-    dims = n_mels * frames
+    # dims = n_mels * frames
     # 02 generate melspectrogram using librosa
+    disc = 5
     y, sr = file_load(file_name)
-    bbc = Buono_Brutto_Cattivo(segment_number=10)
-    y_list_good, _, _, _ = bbc.separate(y, sr)
-    segment_ind = list(y_list_good.keys())[2:]
+    bbc = Buono_Brutto_Cattivo(segment_number=99)
+    _, _, y_list_bad, _ = bbc.separate(y, sr)
+    dims = bbc.newshape[0] * bbc.newshape[1] // disc
+    segment_ind = list(y_list_bad.keys())[2:]
     if len(segment_ind) < 1:
-        return numpy.empty((0, dims))
-    big_wave = y_list_good[segment_ind[0]]
+        return numpy.empty((0, dims)), dims
+    big_wave = y_list_bad[segment_ind[0]]
 
-    for one_wavlet in segment_ind:
-        big_wave = numpy.hstack((big_wave, y_list_good[one_wavlet]))
-
-    y = big_wave
+    for one_wavlet in segment_ind[1:]:
+        big_wave = numpy.hstack((big_wave, y_list_bad[one_wavlet]))
+    spectrogram = razryad_2d(big_wave, 1, disc)
     # 03 generate spectrogramm with augmentstion or not. Depend on method param
-
     # spectrogram = spectrogramm_augmentation(y=y,
     #                                         sr=sr,
     #                                         method=method,
@@ -205,17 +207,16 @@ def file_to_vector_array(file_name,
 
     # 05 calculate total vector size
     vector_array_size = len(features[0, :]) - frames + 1
-
     # 06 skip too short clips
     if vector_array_size < 1:
-        return numpy.empty((0, dims))
+        return numpy.empty((0, dims)), dims
 
     # 07 generate feature vectors by concatenating multiframes
     vector_array = numpy.zeros((vector_array_size, dims))
     for t in range(frames):
-        vector_array[:, n_mels * t: n_mels * (t + 1)] = features[:, t: t + vector_array_size].T
+        vector_array[:, bbc.newshape[0] * t: bbc.newshape[0] * (t + 1)] = features[:, t: t + vector_array_size].T
 
-    return vector_array
+    return vector_array[:, :], dims
 
 
 # load dataset

@@ -12899,3 +12899,68 @@ DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install t
 INFO: :load_directory <- development
 INFO: :target_dir : D:\Projects\dcase\dev_data\fan
 INFO: :train_file num : 3675
+INFO: :load_directory <- development
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:68: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:508: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:3837: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:127: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\optimizers.py:757: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+INFO: :target_dir : C:\Users\markh\Work\my_dcase\testing\dev_data\fan
+INFO: :train_file num : 3675
+INFO: :load_directory <- development
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:68: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:508: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:3837: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:127: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\optimizers.py:757: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+INFO: :target_dir : C:\Users\markh\Work\my_dcase\testing\dev_data\fan
+INFO: :train_file num : 3675
+INFO: :load_directory <- development
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:68: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:508: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:3837: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:127: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\optimizers.py:757: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+INFO: :target_dir : C:\Users\markh\Work\my_dcase\testing\dev_data\fan
+INFO: :train_file num : 3675
+INFO: :load_directory <- development
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:68: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:508: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:3837: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:127: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\optimizers.py:757: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+INFO: :target_dir : C:\Users\markh\Work\my_dcase\testing\dev_data\fan
+INFO: :train_file num : 3675
+INFO: :load_directory <- development
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:68: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:508: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:3837: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:127: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\optimizers.py:757: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+INFO: :target_dir : C:\Users\markh\Work\my_dcase\testing\dev_data\fan
+INFO: :train_file num : 3675
