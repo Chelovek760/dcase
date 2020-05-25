@@ -182,10 +182,9 @@ def file_to_vector_array(file_name,
     y, sr = file_load(file_name)
     bbc = Buono_Brutto_Cattivo(segment_number=99)
     _, _, y_list_bad, _ = bbc.separate(y, sr)
-    dims = bbc.newshape[0] * bbc.newshape[1] // disc
+    dims = bbc.newshape[0] * frames
     segment_ind = list(y_list_bad.keys())[2:]
     if len(segment_ind) < 1:
-        print(0)
         spectrogram = numpy.zeros((2, 2))
 
     else:
@@ -193,7 +192,7 @@ def file_to_vector_array(file_name,
 
         for one_wavlet in segment_ind[1:]:
             big_wave = numpy.hstack((big_wave, y_list_bad[one_wavlet]))
-        spectrogram = razryad_2d(big_wave, 1, disc)
+        spectrogram = big_wave
     # 03 generate spectrogramm with augmentstion or not. Depend on method param
     # spectrogram = spectrogramm_augmentation(y=y,
     #                                         sr=sr,

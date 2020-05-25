@@ -121,6 +121,7 @@ def list_to_vector_array(file_list,
                 dataset = numpy.zeros((vector_array.shape[0] * len(file_list), dims), float)
             dataset[vector_array.shape[0] * idx: vector_array.shape[0] * (idx + 1), :] = vector_array
         except:
+            print(0)
             continue
     dataset = dataset[~numpy.all(dataset == 0, axis=1)]
     return dataset
