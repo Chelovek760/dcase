@@ -29,7 +29,7 @@ from tqdm import tqdm
 from sklearn import metrics
 # original lib
 #import common as com
-import common as com
+import common_good as com
 import keras_model
 import matplotlib.pyplot as plt
 
@@ -180,7 +180,7 @@ if __name__ == "__main__":
 
         print("============== MODEL LOAD ==============")
         # set model path
-        model_file = "{model}/model_{machine_type}.hdf5".format(model=param["model_directory"],
+        model_file = "{model}/model_{machine_type}_good.hdf5".format(model=param["model_directory"],
                                                                 machine_type=machine_type)
 
         # load model file
@@ -219,13 +219,12 @@ if __name__ == "__main__":
                                                     frames=param["feature"]["frames"],
                                                     n_fft=param["feature"]["n_fft"],
                                                     hop_length=param["feature"]["hop_length"],
-                                                    power=param["feature"]["power"])
+                                                    power=param["feature"]["power"])[0]
                     # errors=[stats.pearsonr(data.flatten(),model.predict(data).flatten())[0]]
 
                     # errors=errors.flatten()
                     # if file_idx==0:
                     #     errors_matrix_for_class=numpy.zeros((len(test_files),len(errors)))
-
                     errors = numpy.mean(numpy.square(data - model.predict(data)), axis=1)
 
                     # errors_matrix_for_class[file_idx,:]=errors

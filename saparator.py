@@ -50,7 +50,7 @@ class  Buono_Brutto_Cattivo:
             X[id, :] = wavelet_part.flatten()
         pca = PCA(n_components=2)
         Xnew = pca.fit_transform(X)
-        model = IsolationForest(n_estimators=500)
+        model = IsolationForest(n_estimators=500, behaviour="new")
         res = model.fit_predict(Xnew)
         countminus=np.sum(res==-1)
         if countminus>segment_number//2:

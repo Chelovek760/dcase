@@ -121,6 +121,7 @@ def list_to_vector_array(file_list,
             dataset[vector_array.shape[0] * idx: vector_array.shape[0] * (idx + 1), :] = vector_array
         except:
             continue
+        #print(dataset.shape)
     dataset = dataset[~numpy.all(dataset == 0, axis=1)]
     return dataset
 
@@ -194,7 +195,7 @@ if __name__ == "__main__":
 
         # train model
         print("============== MODEL CREATING ==============")
-        model = keras_model.get_model(param['feature']['n_mels'] * param["feature"]["frames"])
+        model = keras_model.get_model(805)#param['feature']['n_mels'] * param["feature"]["frames"])
         model.summary()
 
         model.compile(**param["fit"]["compile"])
