@@ -28,10 +28,10 @@ import numpy
 from tqdm import tqdm
 from sklearn import metrics
 # original lib
-#import common as com
-import common as com
+import common_bad as com
 import keras_model
 import matplotlib.pyplot as plt
+from dtw import dtw
 
 ########################################################################
 
@@ -159,7 +159,7 @@ if __name__ == "__main__":
     # check mode
     # "development": mode == True
     # "evaluation": mode == False
-    mode = True#com.command_line_chk()
+    mode = True
     if mode is None:
         sys.exit(-1)
 
@@ -180,8 +180,8 @@ if __name__ == "__main__":
 
         print("============== MODEL LOAD ==============")
         # set model path
-        model_file = "{model}/model_{machine_type}.hdf5".format(model=param["model_directory"],
-                                                                machine_type=machine_type)
+        model_file = "{model}/model_{machine_type}_bad.hdf5".format(model=param["model_directory"],
+                                                                    machine_type=machine_type)
 
         # load model file
         if not os.path.exists(model_file):
@@ -214,18 +214,17 @@ if __name__ == "__main__":
 
             for file_idx, file_path in tqdm(enumerate(test_files), total=len(test_files)):
                 try:
-                    data = com.file_to_vector_array(file_path,
-                                                    n_mels=param["feature"]["n_mels"],
-                                                    frames=param["feature"]["frames"],
-                                                    n_fft=param["feature"]["n_fft"],
-                                                    hop_length=param["feature"]["hop_length"],
-                                                    power=param["feature"]["power"])
+                    data, dim = com.file_to_vector_array(file_path,
+                                                         n_mels=param["feature"]["n_mels"],
+                                                         frames=param["feature"]["frames"],
+                                                         n_fft=param["feature"]["n_fft"],
+                                                         hop_length=param["feature"]["hop_length"],
+                                                         power=param["feature"]["power"])
                     # errors=[stats.pearsonr(data.flatten(),model.predict(data).flatten())[0]]
 
                     # errors=errors.flatten()
                     # if file_idx==0:
                     #     errors_matrix_for_class=numpy.zeros((len(test_files),len(errors)))
-
                     errors = numpy.mean(numpy.square(data - model.predict(data)), axis=1)
 
                     # errors_matrix_for_class[file_idx,:]=errors
@@ -233,6 +232,7 @@ if __name__ == "__main__":
                     anomaly_score_list.append([os.path.basename(file_path), y_pred[file_idx]])
                 except BaseException as e:
                     print(e)
+                    anomaly_score_list.append([os.path.basename(file_path), None])
                     com.logger.error("file broken!!: {}".format(file_path))
             # X_er=errors_matrix_for_class
             # pca = TSNE(n_components=2)

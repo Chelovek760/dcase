@@ -62,34 +62,34 @@ INFO: :save_model -> ./model/model_fan.hdf5
 <<<<<<< HEAD
 =======
 INFO: :load_directory <- development
-INFO: :target_dir : D:\Ботать\Работа\dcase\dev_data\fan_id_00
+INFO: :target_dir : D:\пїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅ\dcase\dev_data\fan_id_00
 INFO: :test_file  num : 507
 INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_00.csv
 INFO: :AUC : 0.4482309582309582
 INFO: :pAUC : 0.499676710203026
-INFO: :target_dir : D:\Ботать\Работа\dcase\dev_data\fan_id_02
+INFO: :target_dir : D:\пїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅ\dcase\dev_data\fan_id_02
 INFO: :test_file  num : 459
 INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_02.csv
 INFO: :AUC : 0.4989136490250697
 INFO: :pAUC : 0.5164931828177687
-INFO: :target_dir : D:\Ботать\Работа\dcase\dev_data\fan_id_04
+INFO: :target_dir : D:\пїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅ\dcase\dev_data\fan_id_04
 INFO: :test_file  num : 448
 INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_04.csv
 INFO: :AUC : 0.4881609195402299
 INFO: :pAUC : 0.48865698729582574
-INFO: :target_dir : D:\Ботать\Работа\dcase\dev_data\fan_id_06
+INFO: :target_dir : D:\пїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅ\dcase\dev_data\fan_id_06
 INFO: :test_file  num : 461
 INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_06.csv
 INFO: :AUC : 0.5950692520775623
 INFO: :pAUC : 0.5317101618311707
 INFO: :AUC and pAUC results -> ./result/result.csv
 INFO: :load_directory <- development
-INFO: :target_dir : D:\Ботать\Работа\dcase\dev_data\fan_id_00
+INFO: :target_dir : D:\пїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅ\dcase\dev_data\fan_id_00
 INFO: :test_file  num : 507
 INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_00.csv
 INFO: :AUC : 0.4482309582309582
 INFO: :pAUC : 0.499676710203026
-INFO: :target_dir : D:\Ботать\Работа\dcase\dev_data\fan_id_02
+INFO: :target_dir : D:\пїЅпїЅпїЅпїЅпїЅпїЅ\пїЅпїЅпїЅпїЅпїЅпїЅ\dcase\dev_data\fan_id_02
 INFO: :test_file  num : 459
 DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
 DEBUG:matplotlib:CONFIGDIR=C:\Users\Chelovek\.matplotlib
@@ -13858,6 +13858,1897 @@ DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tahoma' (tahomabd.ttf) norm
 DEBUG:matplotlib.font_manager:findfont: score(<Font 'Verdana' (verdanaz.ttf) italic normal bold normal>) = 4.971363636363637
 DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('D:\\Projects\\dcase\\venv\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
 INFO: :save_model -> ./model/model_fan_bad.hdf5
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan
+INFO: :train_file num : 3675
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal bold normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal bold normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguisli.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candarab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibriz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Myanmar Text' (mmrtext.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe MDL2 Assets' (segmdl2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Cambria' (cambriai.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft Sans Serif' (micross.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Georgia' (georgiaz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Arial' (arial.ttf) normal normal 400 normal>) = 6.413636363636363
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbelli.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candarai.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Leelawadee UI' (LeelawUI.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI Historic' (seguihis.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Palatino Linotype' (palai.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Malgun Gothic' (malgunbd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeuisl.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Arial' (arialbd.ttf) normal normal bold normal>) = 6.698636363636363
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI Emoji' (seguiemj.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft YaHei' (msyhl.ttc) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbel.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeuii.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe Script' (segoescb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibrii.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sylfaen' (sylfaen.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Leelawadee UI' (LeelUIsl.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Courier New' (courbd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Malgun Gothic' (malgun.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibri.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft JhengHei' (msjh.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Constantia' (constanz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguibli.ttf) italic normal black normal>) = 11.525
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI Symbol' (seguisym.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Arial' (ariblk.ttf) normal normal black normal>) = 6.888636363636364
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gadugi' (gadugib.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candara.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candaral.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gadugi' (gadugi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguili.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft YaHei' (msyhbd.ttc) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MingLiU-ExtB' (mingliub.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'SimSun-ExtB' (simsunb.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Comic Sans MS' (comici.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Comic Sans MS' (comicbd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Times New Roman' (timesbd.ttf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Palatino Linotype' (palab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sitka Small' (SitkaI.ttc) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Javanese Text' (javatext.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguisbi.ttf) italic normal semibold normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibrili.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bahnschrift' (bahnschrift.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Trebuchet MS' (trebucbd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sitka Small' (Sitka.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Trebuchet MS' (trebucbi.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Georgia' (georgiai.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbelb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Franklin Gothic Medium' (framd.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lucida Sans Unicode' (l_10646.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Franklin Gothic Medium' (framdit.ttf) italic normal medium normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lucida Console' (lucon.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibril.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Arial' (arialbi.ttf) italic normal bold normal>) = 7.698636363636363
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeuil.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ink Free' (Inkfree.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Palatino Linotype' (palabi.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Comic Sans MS' (comic.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Verdana' (verdanai.ttf) italic normal 400 normal>) = 4.6863636363636365
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft Tai Le' (taile.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeui.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Times New Roman' (timesbi.ttf) italic normal roman normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'HoloLens MDL2 Assets' (holomdl2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft Yi Baiti' (msyi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Georgia' (georgia.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft New Tai Lue' (ntailu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguisb.ttf) normal normal semibold normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Malgun Gothic' (malgunsl.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Consolas' (consolab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nirmala UI' (NirmalaS.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Webdings' (webdings.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft Himalaya' (himalaya.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Georgia' (georgiab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguibl.ttf) normal normal black normal>) = 10.525
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ebrima' (ebrima.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mongolian Baiti' (monbaiti.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tahoma' (tahoma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nirmala UI' (NirmalaB.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gabriola' (Gabriola.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Verdana' (verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Symbol' (symbol.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Cambria' (cambriab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Wingdings' (wingding.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft JhengHei' (msjhbd.ttc) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibrib.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Consolas' (consolaz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbeli.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MS Gothic' (msgothic.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft JhengHei' (msjhl.ttc) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candarali.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeuib.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft PhagsPa' (phagspa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Leelawadee UI' (LeelaUIb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Trebuchet MS' (trebuc.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Marlett' (marlett.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Constantia' (constani.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Courier New' (cour.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Impact' (impact.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbell.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft PhagsPa' (phagspab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Constantia' (constanb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Times New Roman' (times.ttf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yu Gothic' (YuGothB.ttc) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe Print' (segoepr.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sitka Small' (SitkaB.ttc) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Times New Roman' (timesi.ttf) italic normal roman normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeuiz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candaraz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Courier New' (courbi.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Myanmar Text' (mmrtextb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Courier New' (couri.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nirmala UI' (Nirmala.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Consolas' (consolai.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MV Boli' (mvboli.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Trebuchet MS' (trebucit.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'SimSun' (simsun.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Constantia' (constan.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Palatino Linotype' (pala.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Cambria' (cambria.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ebrima' (ebrimabd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe Print' (segoeprb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Consolas' (consola.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Cambria' (cambriaz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbelz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yu Gothic' (YuGothM.ttc) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Arial' (ariali.ttf) italic normal 400 normal>) = 7.413636363636363
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft YaHei' (msyh.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yu Gothic' (YuGothR.ttc) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Verdana' (verdanab.ttf) normal normal bold normal>) = 3.9713636363636367
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft New Tai Lue' (ntailub.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yu Gothic' (YuGothL.ttc) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft Tai Le' (taileb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sitka Small' (SitkaZ.ttc) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe Script' (segoesc.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Comic Sans MS' (comicz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tahoma' (tahomabd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Verdana' (verdanaz.ttf) italic normal bold normal>) = 4.971363636363637
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('D:\\Projects\\dcase\\venv\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal bold normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal bold normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguisli.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candarab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibriz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Myanmar Text' (mmrtext.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe MDL2 Assets' (segmdl2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Cambria' (cambriai.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft Sans Serif' (micross.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Georgia' (georgiaz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Arial' (arial.ttf) normal normal 400 normal>) = 6.413636363636363
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbelli.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candarai.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Leelawadee UI' (LeelawUI.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI Historic' (seguihis.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Palatino Linotype' (palai.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Malgun Gothic' (malgunbd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeuisl.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Arial' (arialbd.ttf) normal normal bold normal>) = 6.698636363636363
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI Emoji' (seguiemj.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft YaHei' (msyhl.ttc) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbel.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeuii.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe Script' (segoescb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibrii.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sylfaen' (sylfaen.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Leelawadee UI' (LeelUIsl.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Courier New' (courbd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Malgun Gothic' (malgun.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibri.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft JhengHei' (msjh.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Constantia' (constanz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguibli.ttf) italic normal black normal>) = 11.525
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI Symbol' (seguisym.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Arial' (ariblk.ttf) normal normal black normal>) = 6.888636363636364
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gadugi' (gadugib.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candara.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candaral.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gadugi' (gadugi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguili.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft YaHei' (msyhbd.ttc) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MingLiU-ExtB' (mingliub.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'SimSun-ExtB' (simsunb.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Comic Sans MS' (comici.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Comic Sans MS' (comicbd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Times New Roman' (timesbd.ttf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Palatino Linotype' (palab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sitka Small' (SitkaI.ttc) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Javanese Text' (javatext.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguisbi.ttf) italic normal semibold normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibrili.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bahnschrift' (bahnschrift.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Trebuchet MS' (trebucbd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sitka Small' (Sitka.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Trebuchet MS' (trebucbi.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Georgia' (georgiai.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbelb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Franklin Gothic Medium' (framd.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lucida Sans Unicode' (l_10646.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Franklin Gothic Medium' (framdit.ttf) italic normal medium normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lucida Console' (lucon.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibril.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Arial' (arialbi.ttf) italic normal bold normal>) = 7.698636363636363
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeuil.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ink Free' (Inkfree.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Palatino Linotype' (palabi.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Comic Sans MS' (comic.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Verdana' (verdanai.ttf) italic normal 400 normal>) = 4.6863636363636365
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft Tai Le' (taile.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeui.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Times New Roman' (timesbi.ttf) italic normal roman normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'HoloLens MDL2 Assets' (holomdl2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft Yi Baiti' (msyi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Georgia' (georgia.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft New Tai Lue' (ntailu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguisb.ttf) normal normal semibold normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Malgun Gothic' (malgunsl.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Consolas' (consolab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nirmala UI' (NirmalaS.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Webdings' (webdings.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft Himalaya' (himalaya.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Georgia' (georgiab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (seguibl.ttf) normal normal black normal>) = 10.525
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ebrima' (ebrima.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mongolian Baiti' (monbaiti.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tahoma' (tahoma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nirmala UI' (NirmalaB.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gabriola' (Gabriola.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Verdana' (verdana.ttf) normal normal 400 normal>) = 3.6863636363636365
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Symbol' (symbol.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Cambria' (cambriab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Wingdings' (wingding.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft JhengHei' (msjhbd.ttc) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Calibri' (calibrib.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Consolas' (consolaz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbeli.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MS Gothic' (msgothic.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft JhengHei' (msjhl.ttc) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candarali.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeuib.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft PhagsPa' (phagspa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Leelawadee UI' (LeelaUIb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Trebuchet MS' (trebuc.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Marlett' (marlett.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Constantia' (constani.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Courier New' (cour.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Impact' (impact.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbell.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft PhagsPa' (phagspab.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Constantia' (constanb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Times New Roman' (times.ttf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yu Gothic' (YuGothB.ttc) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe Print' (segoepr.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sitka Small' (SitkaB.ttc) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Times New Roman' (timesi.ttf) italic normal roman normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe UI' (segoeuiz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Candara' (Candaraz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Courier New' (courbi.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Myanmar Text' (mmrtextb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Courier New' (couri.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nirmala UI' (Nirmala.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Consolas' (consolai.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MV Boli' (mvboli.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Trebuchet MS' (trebucit.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'SimSun' (simsun.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Constantia' (constan.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Palatino Linotype' (pala.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Cambria' (cambria.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ebrima' (ebrimabd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe Print' (segoeprb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Consolas' (consola.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Cambria' (cambriaz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Corbel' (corbelz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yu Gothic' (YuGothM.ttc) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Arial' (ariali.ttf) italic normal 400 normal>) = 7.413636363636363
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft YaHei' (msyh.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yu Gothic' (YuGothR.ttc) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Verdana' (verdanab.ttf) normal normal bold normal>) = 3.9713636363636367
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft New Tai Lue' (ntailub.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yu Gothic' (YuGothL.ttc) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Microsoft Tai Le' (taileb.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sitka Small' (SitkaZ.ttc) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Segoe Script' (segoesc.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Comic Sans MS' (comicz.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tahoma' (tahomabd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Verdana' (verdanaz.ttf) italic normal bold normal>) = 4.971363636363637
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('D:\\Projects\\dcase\\venv\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+INFO: :save_model -> ./model/model_fan_bad.hdf5
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_00
+INFO: :test_file  num : 507
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000000.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000001.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000002.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000003.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000004.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000005.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000006.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000007.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000008.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000009.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000010.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000011.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000012.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000014.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000015.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000016.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000017.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000018.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000019.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000021.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000023.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000024.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000025.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000027.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000028.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000029.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000030.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000031.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000032.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000033.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000034.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000035.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000036.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000037.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000038.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000039.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000040.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000041.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000042.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000043.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000045.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000046.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000047.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000048.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000049.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000050.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000051.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000052.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000053.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000054.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000055.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000056.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000057.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000059.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000060.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000061.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000062.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000063.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000064.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000065.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000066.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000067.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000069.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000070.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000071.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000072.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000073.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000074.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000075.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000076.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000077.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000078.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000079.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000080.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000081.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000082.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000083.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000084.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000085.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000086.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000087.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000088.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000089.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000090.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000091.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000092.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000093.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000094.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000095.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000096.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000097.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000098.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000099.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000000.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000001.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000002.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000003.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000004.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000005.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000006.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000007.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000008.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000009.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000010.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000011.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000012.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000014.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000015.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000016.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000017.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000018.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000019.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000021.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000023.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000024.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000025.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000027.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000028.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000029.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000030.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000031.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000032.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000033.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000034.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000035.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000036.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000037.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000038.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000039.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000040.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000041.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000042.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000043.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000045.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000046.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000047.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000048.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000049.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000050.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000051.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000052.wav
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_00
+INFO: :test_file  num : 507
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000000.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000001.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000002.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000003.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000004.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000005.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000006.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000007.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000008.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000009.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000010.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000011.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000012.wav
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_00
+INFO: :test_file  num : 507
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000000.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000001.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000002.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000003.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000004.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000005.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000006.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000007.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000008.wav
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_00
+INFO: :test_file  num : 507
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_00
+INFO: :test_file  num : 507
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_00
+INFO: :test_file  num : 507
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_00
+INFO: :test_file  num : 507
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000001.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000015.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000019.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000027.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000034.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000038.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000039.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000043.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000048.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000050.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000052.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000053.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000059.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000060.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000069.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000070.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000073.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000074.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000082.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000083.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000086.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000089.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000095.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000096.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000098.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000099.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000000.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000005.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000006.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000015.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000025.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000032.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000033.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000045.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000047.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000048.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000053.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000055.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000066.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000067.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000077.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000079.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000083.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000089.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000090.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000095.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000099.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000103.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000107.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000112.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000115.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000116.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000117.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000120.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000121.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000124.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000131.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000132.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000134.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000148.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000151.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000155.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000157.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000158.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000159.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000160.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000161.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000162.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000168.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000170.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000174.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000175.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000177.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000181.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000188.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000189.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000191.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000192.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000195.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000197.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000199.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000202.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000205.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000206.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000208.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000209.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000214.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000215.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000216.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000217.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000218.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000221.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000222.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000234.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000238.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000241.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000244.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000247.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000251.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000252.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000259.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000260.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000265.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000269.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000272.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000274.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000276.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000279.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000282.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000286.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000289.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000290.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000291.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000293.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000295.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000298.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000300.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000301.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000303.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000306.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000308.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000310.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000312.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000313.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000314.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000316.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000335.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000338.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000339.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000341.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000342.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000344.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000346.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000348.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000353.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000354.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000360.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000362.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000366.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000373.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000374.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000376.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000379.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000381.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000386.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000390.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000392.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000394.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000402.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000403.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000406.wav
+INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_00.csv
+INFO: :AUC : 0.5066584766584766
+INFO: :pAUC : 0.48777964567438253
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_02
+INFO: :test_file  num : 459
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000000.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000008.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000010.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000011.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000012.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000021.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000024.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000027.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000028.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000031.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000038.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000041.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000047.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000049.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000050.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000057.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000061.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000065.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000067.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000074.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000075.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000080.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000081.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000082.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000083.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000086.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000087.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000097.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000098.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000003.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000011.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000014.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000016.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000018.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000021.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000028.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000029.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000035.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000045.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000054.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000055.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000056.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000061.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000062.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000067.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000070.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000076.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000077.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000081.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000084.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000085.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000090.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000091.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000096.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000097.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000098.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000099.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000102.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000103.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000108.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000109.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000110.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000112.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000117.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000118.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000119.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000121.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000122.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000123.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000126.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000130.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000133.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000144.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000148.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000149.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000152.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000156.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000168.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000173.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000174.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000175.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000177.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000180.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000181.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000182.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000183.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000184.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000188.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000191.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000193.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000200.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000216.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000219.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000220.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000226.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000229.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000235.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000236.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000238.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000241.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000250.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000251.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000256.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000257.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000262.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000264.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000268.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000269.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000271.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000272.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000273.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000274.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000278.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000279.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000280.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000284.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000285.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000287.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000289.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000297.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000298.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000301.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000302.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000303.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000305.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000315.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000316.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000322.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000333.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000341.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000342.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000343.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000344.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000348.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000350.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000352.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000358.wav
+INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_02.csv
+INFO: :AUC : 0.5471448467966573
+INFO: :pAUC : 0.5507990030787274
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_04
+INFO: :test_file  num : 448
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000000.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000011.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000015.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000028.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000040.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000041.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000053.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000055.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000062.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000064.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000066.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000069.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000073.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000078.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000080.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000081.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000082.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000086.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000087.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000094.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000095.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000003.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000006.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000008.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000010.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000014.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000017.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000024.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000031.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000032.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000034.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000035.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000036.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000045.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000046.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000048.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000049.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000051.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000052.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000054.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000056.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000059.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000060.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000065.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000066.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000067.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000069.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000071.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000073.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000074.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000076.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000079.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000083.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000086.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000087.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000089.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000092.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000096.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000097.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000101.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000105.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000106.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000108.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000109.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000111.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000112.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000114.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000116.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000117.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000118.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000121.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000122.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000124.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000128.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000131.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000132.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000137.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000143.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000145.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000148.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000150.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000152.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000153.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000155.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000156.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000160.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000161.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000163.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000166.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000167.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000168.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000169.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000170.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000173.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000178.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000180.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000182.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000188.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000189.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000191.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000196.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000198.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000199.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000202.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000208.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000209.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000210.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000211.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000212.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000217.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000219.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000225.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000227.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000233.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000235.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000236.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000237.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000238.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000239.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000240.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000241.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000242.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000245.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000246.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000250.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000251.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000253.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000254.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000263.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000268.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000269.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000270.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000271.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000272.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000278.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000283.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000285.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000288.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000289.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000293.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000296.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000298.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000301.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000306.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000313.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000314.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000322.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000325.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000326.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000328.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000330.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000333.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000338.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000339.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000343.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000345.wav
+INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_04.csv
+INFO: :AUC : 0.4235919540229885
+INFO: :pAUC : 0.499697519661222
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_06
+INFO: :test_file  num : 461
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000002.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000012.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000016.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000018.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000019.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000023.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000027.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000030.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000035.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000038.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000039.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000040.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000041.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000054.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000063.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000065.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000066.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000071.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000074.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000075.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000081.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000084.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000085.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000088.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000089.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000091.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000094.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000096.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000097.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000099.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000001.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000007.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000008.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000009.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000012.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000014.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000021.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000025.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000028.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000031.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000034.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000036.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000038.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000040.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000042.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000045.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000049.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000052.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000053.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000056.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000061.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000062.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000063.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000064.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000075.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000078.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000079.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000082.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000090.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000092.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000093.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000094.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000098.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000100.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000104.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000105.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000106.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000125.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000126.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000127.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000135.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000137.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000138.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000142.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000145.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000148.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000150.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000154.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000158.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000159.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000162.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000171.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000172.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000179.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000180.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000181.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000183.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000185.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000187.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000190.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000191.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000195.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000196.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000198.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000200.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000201.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000207.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000208.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000212.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000217.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000223.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000226.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000227.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000231.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000232.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000236.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000239.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000241.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000243.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000246.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000248.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000249.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000250.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000255.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000257.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000259.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000260.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000268.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000273.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000275.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000277.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000278.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000280.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000282.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000283.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000286.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000288.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000289.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000290.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000292.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000297.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000298.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000299.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000302.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000305.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000306.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000312.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000317.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000324.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000325.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000326.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000337.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000340.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000348.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000349.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000352.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000354.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000357.wav
+INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_06.csv
+INFO: :AUC : 0.48581717451523543
+INFO: :pAUC : 0.4917626476162706
+INFO: :AUC and pAUC results -> ./result/result.csv
+DEBUG:tensorflow:Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+INFO: :load_directory <- development
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_00
+INFO: :test_file  num : 507
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000001.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000012.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000015.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000019.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000027.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000034.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000038.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000039.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000041.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000043.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000048.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000050.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000052.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000053.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000059.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000060.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000069.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000070.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000073.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000074.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000082.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000083.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000086.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000089.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000095.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000096.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000098.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_00_00000099.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000000.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000005.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000006.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000015.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000025.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000032.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000033.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000045.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000047.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000048.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000053.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000055.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000066.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000067.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000077.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000079.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000083.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000089.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000090.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000095.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000099.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000103.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000112.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000115.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000116.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000117.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000120.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000121.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000124.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000131.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000132.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000134.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000140.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000148.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000151.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000155.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000157.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000158.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000159.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000160.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000161.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000162.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000168.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000170.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000174.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000175.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000177.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000181.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000188.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000189.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000191.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000192.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000195.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000197.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000199.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000202.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000205.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000206.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000208.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000209.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000214.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000215.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000216.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000217.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000221.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000222.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000234.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000238.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000241.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000244.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000247.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000251.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000252.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000259.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000269.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000272.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000274.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000276.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000279.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000282.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000286.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000288.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000289.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000290.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000291.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000293.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000295.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000298.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000300.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000301.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000303.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000306.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000308.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000310.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000312.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000313.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000314.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000316.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000335.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000339.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000341.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000342.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000344.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000346.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000348.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000353.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000354.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000360.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000362.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000366.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000372.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000373.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000374.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000376.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000379.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000381.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000386.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000390.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000392.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000394.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000400.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000402.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000403.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_00_00000406.wav
+INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_00.csv
+INFO: :AUC : 0.513071253071253
+INFO: :pAUC : 0.4876503297555929
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_02
+INFO: :test_file  num : 459
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000000.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000008.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000010.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000011.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000012.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000021.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000024.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000027.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000028.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000031.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000038.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000041.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000047.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000049.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000050.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000057.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000061.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000065.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000067.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000074.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000075.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000080.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000081.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000082.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000083.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000086.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000087.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000097.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_02_00000098.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000003.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000005.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000011.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000014.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000016.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000018.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000021.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000028.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000029.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000035.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000045.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000054.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000055.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000056.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000061.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000062.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000067.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000070.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000076.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000077.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000081.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000084.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000085.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000087.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000090.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000091.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000096.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000097.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000098.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000099.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000100.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000102.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000103.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000108.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000109.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000110.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000112.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000117.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000118.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000119.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000121.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000123.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000130.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000133.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000144.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000148.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000149.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000152.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000156.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000168.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000173.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000174.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000175.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000177.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000180.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000181.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000182.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000183.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000184.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000188.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000191.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000193.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000200.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000216.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000219.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000220.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000226.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000229.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000235.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000236.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000238.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000241.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000243.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000250.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000251.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000256.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000257.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000262.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000264.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000268.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000269.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000271.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000272.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000273.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000274.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000278.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000279.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000284.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000285.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000287.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000289.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000297.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000298.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000301.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000302.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000303.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000305.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000313.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000315.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000316.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000322.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000333.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000338.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000341.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000342.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000343.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000344.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000348.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000350.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000352.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_02_00000358.wav
+INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_02.csv
+INFO: :AUC : 0.5419359331476323
+INFO: :pAUC : 0.5497727605922885
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_04
+INFO: :test_file  num : 448
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000000.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000011.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000015.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000028.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000040.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000041.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000055.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000062.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000063.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000064.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000066.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000069.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000073.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000078.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000080.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000081.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000082.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000086.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000087.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000094.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_04_00000095.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000003.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000006.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000008.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000010.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000014.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000015.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000017.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000020.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000021.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000024.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000031.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000032.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000034.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000035.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000036.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000045.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000046.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000048.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000049.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000051.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000052.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000054.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000056.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000059.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000060.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000065.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000066.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000067.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000069.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000071.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000073.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000074.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000076.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000079.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000083.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000086.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000087.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000089.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000092.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000096.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000097.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000101.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000105.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000106.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000108.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000109.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000111.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000112.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000114.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000116.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000117.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000118.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000121.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000122.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000124.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000128.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000131.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000132.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000137.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000143.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000145.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000148.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000150.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000152.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000153.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000155.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000156.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000161.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000163.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000166.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000167.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000168.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000169.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000170.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000173.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000178.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000180.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000182.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000188.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000189.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000191.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000196.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000198.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000199.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000202.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000208.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000209.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000210.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000211.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000212.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000217.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000219.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000225.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000227.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000233.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000235.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000236.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000238.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000239.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000240.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000241.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000242.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000245.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000246.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000250.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000251.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000253.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000254.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000263.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000268.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000269.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000270.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000271.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000272.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000278.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000283.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000285.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000288.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000289.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000293.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000296.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000298.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000299.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000301.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000306.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000314.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000322.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000325.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000326.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000328.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000330.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000333.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000338.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000339.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000343.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_04_00000345.wav
+INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_04.csv
+INFO: :AUC : 0.42410919540229886
+INFO: :pAUC : 0.5001512401693889
+INFO: :target_dir : D:\Projects\dcase\dev_data\fan_id_06
+INFO: :test_file  num : 461
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000002.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000012.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000013.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000016.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000018.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000019.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000022.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000023.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000027.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000030.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000038.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000039.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000040.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000041.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000044.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000054.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000063.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000065.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000066.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000071.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000074.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000075.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000081.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000084.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000085.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000088.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000089.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000091.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000094.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000096.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000097.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\normal_id_06_00000099.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000001.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000007.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000008.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000009.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000012.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000014.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000025.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000026.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000028.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000031.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000034.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000036.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000038.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000040.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000042.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000045.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000049.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000052.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000053.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000056.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000058.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000061.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000062.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000063.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000064.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000068.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000075.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000078.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000079.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000082.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000090.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000092.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000093.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000094.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000098.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000100.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000104.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000105.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000106.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000109.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000120.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000125.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000126.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000127.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000135.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000137.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000138.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000142.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000145.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000146.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000148.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000150.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000154.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000158.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000159.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000162.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000171.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000172.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000179.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000180.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000181.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000183.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000185.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000187.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000190.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000191.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000195.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000196.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000198.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000200.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000201.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000207.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000208.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000212.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000217.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000223.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000226.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000227.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000231.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000232.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000236.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000239.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000241.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000243.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000246.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000248.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000249.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000255.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000257.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000258.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000259.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000260.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000268.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000275.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000277.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000278.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000280.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000282.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000283.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000286.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000288.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000289.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000290.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000292.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000297.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000298.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000299.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000302.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000305.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000306.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000312.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000317.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000324.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000325.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000326.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000337.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000340.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000348.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000349.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000352.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000354.wav
+ERROR: :file broken!!: D:\Projects\dcase\dev_data\fan/test\anomaly_id_06_00000357.wav
+INFO: :anomaly score result ->  ./result/anomaly_score_fan_id_06.csv
+INFO: :AUC : 0.486371191135734
+INFO: :pAUC : 0.4933663799387666
+INFO: :AUC and pAUC results -> ./result/result.csv
 >>>>>>> 6f1d1ec725d33faa4429e888c3692eb9b5349b6a
 INFO: :load_directory <- development
 WARNING:tensorflow:From C:\Users\markh\Work\my_dcase\testing\env\lib\site-packages\keras\backend\tensorflow_backend.py:68: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
