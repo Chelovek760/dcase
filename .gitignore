@@ -1,6 +1,6 @@
 dev_data
 model
-result
+/result/
 *.csv
 *.txt
 /__pycache__
@@ -15,3 +15,4 @@ config.py
 /models/
 /.vscode/
 /vggish_soup
+/models/

@@ -1,6 +1,7 @@
 dev_directory : ./dev_data
 eval_directory : ./eval_data
 model_directory: ./model
+modelM_directory: ./Wigner/model
 result_directory: ./result
 result_file: result.csv
 
