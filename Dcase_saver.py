@@ -1,10 +1,12 @@
 import json
 import pathlib
-
+import F5report as f5r
 import numpy as np
 import ujson as json
 from  scipy.stats import skew,kurtosis,entropy
-from config import DCASE_CSV_DIR
+
+
+# from config import DCASE_CSV_DIR
 
 def FeatureSpectralDecrease(X):
     # compute index vector
@@ -81,7 +83,7 @@ class Saver():
         self.na = Frequency_Analysis_obj
         self.path = path_in
         self.dir_out = dir_out
-        self.data_from_isotone()
+        # self.data_from_isotone()
         self.saver_json()
 
     def data_from_isotone(self):
@@ -112,31 +114,16 @@ class Saver():
 
     def saver_json(self):
         coef_list = self.na.c_wavlet_coef.flatten().tolist()
-        time_list = self.xcoord.tolist()
-        main_tone_list = self.ycoord_mid
+        time_list = self.na.x_axis_time.tolist()
         freqs_line_list = self.na.y_axis_freq.tolist()
-        disbal_coef = np.nan_to_num(self.dist_coef, nan=0).tolist()
-        size = self.na.c_wavlet_coef.shape
-        bulat = np.array(simpleFeats(coef_list))
-        coef = np.array(coef_list)
-        koef = np.max(disbal_coef)
-        freq = np.std(freqs_line_list)
-        spectal = coef.reshape(size)
-        fsd = np.max(FeatureSpectralDecrease(spectal)[0])
-        fsf = np.max(FeatureSpectralFlux(spectal))
-        fss = np.max(FeatureSpectralSlope(spectal))
-        fsflat = np.max(FeatureSpectralFlatness(spectal))
+
 
         path = pathlib.Path(self.path)
         dir_out = pathlib.Path(self.dir_out)
         if not dir_out.exists():
             dir_out.mkdir(parents=True, exist_ok=True)
         save_data_dict = {'name': str(path.stem), 'coef_list': coef_list, 'time_list': time_list,
-                          'main_tone_list': main_tone_list,
-                          'disbal_coef': disbal_coef, 'freqs_line_list': freqs_line_list,
-                          'fits': {'mean': bulat[0], 'std': bulat[1], 'max': bulat[2], 'min': bulat[3],
-                                   'skew': bulat[4], 'kurtosis': bulat[5], 'entropy': bulat[6], 'maxdisbkoef': koef,
-                                   'freqstd': freq, 'fsd': fsd, 'fsf': fsf, 'fss': fss, 'fsflat': fsflat}, 'size': size}
+                          'freqs_line_list': freqs_line_list}
         with open(str(dir_out.joinpath(path.stem)) + '.json', "w") as write_file:
             json.dump(save_data_dict, write_file)
 

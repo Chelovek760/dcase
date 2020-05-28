@@ -11,7 +11,7 @@ from Fquality import support_auto_corr_freq, support_fft_freq
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from mpl_toolkits.axes_grid1 import make_axes_locatable
-
+from tftb.processing.cohen import MargenauHillDistribution
 
 class Wavlet():
     """
@@ -19,7 +19,7 @@ class Wavlet():
     """
 
     def __init__(self, wave):
-        # print('CALCULATE T-F MAP')
+        print('CALCULATE T-F MAP')
         self.sig = wave.ys
         self.duration = wave.duration
         self.N = np.shape(self.sig)[0]
@@ -35,6 +35,8 @@ class Wavlet():
         list_of_fftsf_std = [fftstd] * tsarsf.shape[0]
         list_of_arsf = [arsf] * tsarsf.shape[0]
         list_of_arsf_std = [std] * tsarsf.shape[0]
+        tfr = MargenauHillDistribution(waveframe.ys)
+        tf, ts, freq = tfr.run()
         # print(tf.shape)
         tps = np.arange(0, self.t[-1], tp)
         for frame in tps[1:-2]:
@@ -46,25 +48,19 @@ class Wavlet():
             list_of_arsf_std = list_of_arsf_std + [std] * waveframe.ts.shape[0]
             list_of_fftsf = list_of_fftsf + [fftsf] * waveframe.ts.shape[0]
             list_of_fftsf_std = list_of_fftsf_std + [fftstd] * waveframe.ts.shape[0]
+            tfr = MargenauHillDistribution(waveframe.ys)
+            tff, tsf, freqf = tfr.run()
             # print(tff.shape)
+            tf = np.hstack((tf, tff))
+            ts = np.hstack((ts, tsf))
         # tfr = MargenauHillDistribution(wave.ys)
         # tf, ts, freq = tfr.run()
-        nperseg = int(round(20 * wave.framerate/1000))
-        noverlap = int(round(10 * wave.framerate/1000))
-        freq, times, spec = signal.spectrogram(self.sig,
-                                                fs=wave.framerate,
-                                                window='hann',
-                                                nperseg=nperseg,
-                                                noverlap=noverlap,
-                                                detrend=False)
-        tf = np.log(spec.astype(np.float32) + 10e-10)
         n_fbins = len(freq)
-        ts=times
-        # tf = tf[:int(n_fbins / 2.0), :]
-        # freq = freq[:int(n_fbins / 2.0)]
-        self.x_axis_time = ts
-        self.y_axis_freq = freq
-        self.c_wavlet_coef = tf**2
+        tf = tf[:int(n_fbins / 2.0), :]
+        freq = freq[:int(n_fbins / 2.0)]
+        self.x_axis_time = np.arange(0, ts.shape[0]) * self.dt
+        self.y_axis_freq = freq * wave.framerate
+        self.c_wavlet_coef = np.abs(tf).astype(int)
         self.arsf = np.array(list_of_arsf)
         self.arsf_std = np.array(list_of_arsf_std)
         self.fftsf = np.array(list_of_fftsf)
