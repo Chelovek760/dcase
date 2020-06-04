@@ -23,7 +23,6 @@ import librosa.core
 import librosa.feature
 import librosa.display
 import yaml
-from shuffle_augmentator import shuffle_generator
 
 ########################################################################
 
@@ -136,8 +135,7 @@ def spectrogramm_augmentation(y,
         df = pandas.Series(y)
         amp = df.quantile([0.75])
         y = y + numpy.random.uniform(-amp, amp, len(y))
-    if method == 'shuffle':
-        y = shuffle_generator(y, len(y))
+
     mel_spectrogram = librosa.feature.melspectrogram(y=y,
                                                      sr=sr,
                                                      n_fft=n_fft,
@@ -149,7 +147,6 @@ def spectrogramm_augmentation(y,
 
     return log_mel_spectrogram
 
-
 def file_to_vector_array(file_name,
                          n_mels=64,
                          frames=5,
@@ -159,7 +156,7 @@ def file_to_vector_array(file_name,
                          method='normal'):
     """
     convert file_name to a vector array.
-    
+
     file_name : str
         target .wav file
 
@@ -225,7 +222,6 @@ def select_dirs(param, mode):
         dirs = sorted(glob.glob(dir_path))
     return dirs
 
-
 def add_new_feature(mel_spectrogram, log_mel_spectrogram):
     rms = librosa.feature.rmse(S=mel_spectrogram)
     features = numpy.append(log_mel_spectrogram, rms, axis=0)
@@ -256,6 +252,7 @@ def add_new_feature(mel_spectrogram, log_mel_spectrogram):
 
 
 if __name__ == "__main__":
+
     file_name = r'dev_data\fan\train\normal_id_00_00000000.wav'
     n_mels = 128
     frames = 5

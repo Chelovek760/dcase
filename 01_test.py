@@ -8,15 +8,12 @@
 ########################################################################
 # import default python-library
 ########################################################################
-from scipy import signal, stats
 import os
 import glob
 import csv
 import re
 import itertools
 import sys
-import pandas as pd
-from sklearn.manifold import TSNE
 ########################################################################
 
 
@@ -28,11 +25,8 @@ import numpy
 from tqdm import tqdm
 from sklearn import metrics
 # original lib
-import common_bad as com
+import common as com
 import keras_model
-import matplotlib.pyplot as plt
-from dtw import dtw
-
 ########################################################################
 
 
@@ -40,8 +34,6 @@ from dtw import dtw
 # load parameter.yaml
 ########################################################################
 param = com.yaml_load()
-
-
 #######################################################################
 
 
@@ -175,13 +167,13 @@ if __name__ == "__main__":
     # loop of the base directory
     for idx, target_dir in enumerate(dirs):
         print("\n===========================")
-        print("[{idx}/{total}] {dirname}".format(dirname=target_dir, idx=idx+1, total=len(dirs)))
+        print("[{idx}/{total}] {dirname}".format(dirname=target_dir, idx=idx + 1, total=len(dirs)))
         machine_type = os.path.split(target_dir)[1]
 
         print("============== MODEL LOAD ==============")
         # set model path
-        model_file = "{model}/model_{machine_type}_bad.hdf5".format(model=param["model_directory"],
-                                                                    machine_type=machine_type)
+        model_file = "{model}/model_{machine_type}.hdf5".format(model=param["model_directory"],
+                                                                machine_type=machine_type)
 
         # load model file
         if not os.path.exists(model_file):
@@ -211,40 +203,20 @@ if __name__ == "__main__":
 
             print("\n============== BEGIN TEST FOR A MACHINE ID ==============")
             y_pred = [0. for k in test_files]
-
             for file_idx, file_path in tqdm(enumerate(test_files), total=len(test_files)):
                 try:
-                    data, dim = com.file_to_vector_array(file_path,
-                                                         n_mels=param["feature"]["n_mels"],
-                                                         frames=param["feature"]["frames"],
-                                                         n_fft=param["feature"]["n_fft"],
-                                                         hop_length=param["feature"]["hop_length"],
-                                                         power=param["feature"]["power"])
-                    # errors=[stats.pearsonr(data.flatten(),model.predict(data).flatten())[0]]
-
-                    # errors=errors.flatten()
-                    # if file_idx==0:
-                    #     errors_matrix_for_class=numpy.zeros((len(test_files),len(errors)))
+                    data = com.file_to_vector_array(file_path,
+                                                    n_mels=param["feature"]["n_mels"],
+                                                    frames=param["feature"]["frames"],
+                                                    n_fft=param["feature"]["n_fft"],
+                                                    hop_length=param["feature"]["hop_length"],
+                                                    power=param["feature"]["power"])
                     errors = numpy.mean(numpy.square(data - model.predict(data)), axis=1)
-
-                    # errors_matrix_for_class[file_idx,:]=errors
                     y_pred[file_idx] = numpy.mean(errors)
                     anomaly_score_list.append([os.path.basename(file_path), y_pred[file_idx]])
-                except BaseException as e:
-                    print(e)
-                    anomaly_score_list.append([os.path.basename(file_path), None])
+                except:
                     com.logger.error("file broken!!: {}".format(file_path))
-            # X_er=errors_matrix_for_class
-            # pca = TSNE(n_components=2)
-            # X_er = pca.fit_transform(errors_matrix_for_class)
-            # ind1=numpy.argwhere(y_true==1)
-            # ind0 = numpy.argwhere(y_true == 0)
-            # plt.scatter([0]*len(X_er[ind1,0]),X_er[ind1,0])
-            # plt.scatter([1]*len(X_er[ind0,0]),X_er[ind0,0])
-            # plt.figure()
-            # plt.scatter(X_er[ind1,0],X_er[ind1,1])
-            # plt.scatter(X_er[ind0,0],X_er[ind0,1])
-            # plt.show()
+
             # save anomaly score
             save_csv(save_file_path=anomaly_score_csv, save_data=anomaly_score_list)
             com.logger.info("anomaly score result ->  {}".format(anomaly_score_csv))

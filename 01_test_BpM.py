@@ -29,7 +29,7 @@ from tqdm import tqdm
 from sklearn import metrics
 # original lib
 import common as com
-import common_M as comM
+import Wigner.common_M as comM
 import keras_model
 import matplotlib.pyplot as plt
 from dtw import dtw
@@ -279,9 +279,9 @@ if __name__ == "__main__":
 
         print("============== MODEL LOAD ==============")
         # set model path
-        model_file = "{model}/model_{machine_type}_512.hdf5".format(model=param["model_directory"],
-                                                                    machine_type=machine_type)
-        model_fileM = 'D:/Projects/dcase/Wigner/model/model_fun.hdf5'
+        model_file = "{model}/model_{machine_type}.hdf5".format(model=param["model_directory"],
+                                                                machine_type=machine_type)
+        model_fileM = 'D:/Projects/dcase/Wigner/model/model_slider.hdf5'
 
         # load model file
         if not os.path.exists(model_file):
@@ -302,7 +302,7 @@ if __name__ == "__main__":
         for id_str in machine_id_list:
             # load test file
             test_files, y_true = test_file_list_generator(target_dir, id_str)
-            test_files_M, y_true_M = test_file_list_generator_M('D:\\Projects\\dcase\\thrash\\fan\\', id_str)
+            test_files_M, y_true_M = test_file_list_generator_M(r'D:\Projects\dcase\thrash\dev_data\slider', id_str)
             # setup anomaly score file path
             anomaly_score_csv = "{result}/anomaly_score_{machine_type}_{id_str}.csv".format(
                 result=param["result_directory"],
