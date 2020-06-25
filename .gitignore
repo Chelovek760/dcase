@@ -15,4 +15,5 @@ config.py
 /models/
 /.vscode/
 /vggish_soup
-/models/
+/eval_data/
+

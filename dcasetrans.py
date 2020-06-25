@@ -6,12 +6,14 @@ import pathlib
 from concurrent.futures import ThreadPoolExecutor
 from tqdm import tqdm
 
-directory = TRAIN_WAV_DIR
-directory_out = TRAIN_DCASE_JSON_DIR
+directory = TEST_WAV_DIR
+directory_out = TEST_DCASE_JSON_DIR
 files = pathlib.Path(directory)
 files = list(files.glob('*.wav'))
 
 from tqdm import tqdm
+
+
 def visual_finc(wav):
     if pathlib.Path(directory_out + wav.stem + '.json').exists():
         return print(str(wav.stem) + 'Alredy Exist')

@@ -103,7 +103,7 @@ def list_to_vector_array(file_list,
         * dataset.shape = (number of feature vectors, dimensions of feature vectors)
     """
     # calculate the number of dimensions
-    dims = 900  # n_mels * frames
+    dims = 500  # n_mels * frames
 
     # iterate file_to_vector_array()
     for idx in tqdm(range(len(file_list)), desc=msg):
@@ -201,7 +201,7 @@ if __name__ == "__main__":
         print(train_data.shape)
         # train model
         print("============== MODEL TRAINING ==============")
-        model = keras_model.get_model(900)  # param["feature"]["n_mels"] * param["feature"]["frames"])
+        model = keras_model.get_model(500)  # param["feature"]["n_mels"] * param["feature"]["frames"])
         model.summary()
 
         model.compile(**param["fit"]["compile"])

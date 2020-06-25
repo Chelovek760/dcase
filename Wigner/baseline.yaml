@@ -1,5 +1,5 @@
 dev_directory: D:\Projects\dcase\thrash\dev_data
-eval_directory: ./eval_data
+eval_directory: D:\Projects\dcase\thrash\dev_data
 model_directory: ./model
 result_directory: ./result
 result_file: result.csv

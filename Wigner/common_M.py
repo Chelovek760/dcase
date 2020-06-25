@@ -171,7 +171,7 @@ def file_to_vector_array(file_name,
     # print(data.keys())
     # print(data['size'] )
 
-    vector_array = np.reshape(data['coef_list'][::20], (500, 900))  # data['size'])
+    vector_array = np.reshape(data['coef_list'][::40], (500, 500))  # data['size'])
 
     return vector_array
 

@@ -133,7 +133,7 @@ def test_file_list_generator(target_dir,
     # evaluation
     else:
         files = sorted(
-            glob.glob("{dir}/{dir_name}/*{id_name}*.{ext}".format(dir=target_dir,
+            glob.glob("{dir}\{dir_name}\*{id_name}*.{ext}".format(dir=target_dir,
                                                                   dir_name=dir_name,
                                                                   id_name=id_name,
                                                                   ext=ext)))
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     # check mode
     # "development": mode == True
     # "evaluation": mode == False
-    mode = True
+    mode = False
     if mode is None:
         sys.exit(-1)
 
@@ -220,7 +220,8 @@ if __name__ == "__main__":
                     errors = numpy.mean(numpy.square(data - model.predict(data)), axis=1)
                     y_pred[file_idx] = numpy.mean(errors)
                     anomaly_score_list.append([os.path.basename(file_path), y_pred[file_idx]])
-                except:
+                except BaseException as e:
+                    print(e)
                     com.logger.error("file broken!!: {}".format(file_path))
 
             # save anomaly score
@@ -230,7 +231,7 @@ if __name__ == "__main__":
             if mode:
                 # append AUC and pAUC to lists
                 auc = metrics.roc_auc_score(y_true, y_pred)
-                p_auc = metrics.roc_auc_score(y_true, y_pred, max_fpr=param["max_fpr"])
+                p_auc = metrics.roc_auscore(y_true, y_pred, max_fpr=param["max_fpr"])
                 csv_lines.append([id_str.split("_", 1)[1], auc, p_auc])
                 performance.append([auc, p_auc])
                 com.logger.info("AUC : {}".format(auc))
